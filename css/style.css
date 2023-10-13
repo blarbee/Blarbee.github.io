@@ -13,6 +13,7 @@ body{
     height:600px;
     align-items: center;
     justify-content: center;
+   
 }
 .box_in_box{
     align-items: center;
@@ -41,6 +42,7 @@ button{
         width: 100%;
         align-items: center;
         justify-content: center;
+        background-color: silver;
     }
     .box_in_box{
         align-items: center;
