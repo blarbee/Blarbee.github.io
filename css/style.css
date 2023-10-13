@@ -7,6 +7,7 @@
 body{
     background-color: var(--color); 
     color: var(--text);
+    font-family: 'Courier New', Courier, monospace;
 }
 .box{
     display: flex;
@@ -34,11 +35,10 @@ button{
     border-radius: 12px;
     color: var(--text);
     padding:10px;
+    font-family: 'Courier New', Courier, monospace;
 }
-
-
-
-@media only screen and (max-width: 480px) {
+/* phone more tiny than puter! */
+@media only screen and (max-width: 400px) {
     body {
       background-color: var(--color);
       display:flex;

@@ -1,2 +1,2 @@
-|('O')/
-[hehe](https://blarbee.github.io/)
+' v')/
+[hehehe](https://blarbee.github.io/)
