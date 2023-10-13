@@ -36,6 +36,7 @@ button{
     padding:10px;
     font-family: 'Courier New', Courier, monospace;
 }
+
 /* phone more tiny than puter! */
 @media (max-width: 1000px) {
     body {
