@@ -38,7 +38,7 @@ button{
     font-family: 'Courier New', Courier, monospace;
 }
 /* phone more tiny than puter! */
-@media only screen and (max-width: 1080px) {
+@media (max-width: 1000px) {
     body {
       background-color: var(--color);
       display:flex;
