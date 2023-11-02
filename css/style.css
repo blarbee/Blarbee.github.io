@@ -53,8 +53,9 @@ button{
 @media (max-width: 1000px) {
     body {
       background-color: var(--color);
-      display:flex;
+      /* display:flex; */
       font-size: 60px;
+      font-family: 'Courier New', Courier, monospace;
     }
     .box{
         display: flex;
@@ -68,6 +69,7 @@ button{
         align-items: center;
         justify-content: center;
         background-color: transparent;
+        padding:300px 30px 30px 30px;
     }
     p{
         align-items: center;
@@ -76,15 +78,5 @@ button{
     button{
         width: max-content;
         font-size: 40px;
-    }
-    
-    #pixel{
-        background-color: black;
-        width: 20px;
-        height: 20px;
-        box-shadow: 20px 0  black, 40px 0 black, 60px 0 black, 
-                    -40px 20px black, -20px 20px black, 0 20px var(--frog), 20px 20px var(--frog), 40px 20px black, 60px 20px var(--frog), 80px 20px black,
-                    -60px 40px black, -40px 40px var(--shadow), -20px 40px var(--frog), -10px 40px var(--frog), 0px 40px var(--frog), 20px 40px var(--frog), 40px 40px var(--frog), 60px 40px var(--frog), 80px 40px black;
-   
     }
 }
