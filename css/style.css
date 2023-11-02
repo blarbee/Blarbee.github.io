@@ -1,6 +1,8 @@
 :root{
     --color: purple;
     --text: purple;
+    --frog: #0e584b; /* #296d66;*/
+    --shadow: #0b4c41;/*#07582e;*/
 }
 
 body{
@@ -35,6 +37,15 @@ button{
     color: var(--text);
     padding:10px;
     font-family: 'Courier New', Courier, monospace;
+}
+
+#pixel{
+    background-color: black;
+    box-shadow: 20px 0  black, 40px 0 black, 60px 0 black, 
+                -40px 20px black, -20px 20px black, 0 20px var(--frog), 20px 20px var(--frog), 40px 20px black, 60px 20px var(--frog), 80px 20px black,
+                -60px 40px black, -40px 40px var(--shadow), -20px 40px var(--frog), -10px 40px var(--frog), 0px 40px var(--frog), 20px 40px var(--frog), 40px 40px var(--frog), 60px 40px var(--frog), 80px 40px black;
+    width: 20px;
+    height: 20px;
 }
 
 /* phone more tiny than puter! */
