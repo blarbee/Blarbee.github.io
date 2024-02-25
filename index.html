@@ -3,7 +3,8 @@
     <head>
         <title>hii ::3</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="css/style.css">
+        <link href="css/style.css" rel="stylesheet" >
+        <link href="css/prism.css" rel="stylesheet" />
         <script src="js/script.js"></script> 
     </head>
     <body>
@@ -12,11 +13,28 @@
                 <button onclick="randColor()" ondblclick="theme()">ooouuuh fancy button</button>
             </div>
         </div>
+
         <div class="box">
             <div id="pixel"><p><small>hi</small></p></div>
         </div>
+
+        <div class="box">
+            <pre>
+                <code class="language-c line-numbers">
+class Point{
+    public:
+        int x, y;
+
+    private:
+        Point();
+        ~Point();
+};
+                </code>
+            </pre>
+
+        </div>
         
      
-        
+        <script src="js/prism.js"></script>
     </body>
 </html>

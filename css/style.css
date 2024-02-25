@@ -10,14 +10,18 @@ body{
     color: var(--text);
     font-family: 'Courier New', Courier, monospace;
 }
+
 .box{
     display: flex;
     width: 1350px;
     height:600px;
     align-items: center;
     justify-content: center;
+
+    /* border: pink dashed 2px; */
    
 }
+
 .box_in_box{
     align-items: center;
     justify-content: center;
@@ -26,7 +30,7 @@ body{
     padding: 20px;
     box-shadow: 0px 0px 10px 5px var(--text);
 }
-p{
+p, small{
     align-items: center;
     justify-content: center;
 }
@@ -45,8 +49,39 @@ button{
     height: 20px;
     box-shadow: 20px 0  black, 40px 0 black, 60px 0 black, 
                 -40px 20px black, -20px 20px black, 0 20px var(--frog), 20px 20px var(--frog), 40px 20px black, 60px 20px var(--frog), 80px 20px black,
-                -60px 40px black, -40px 40px var(--shadow), -20px 40px var(--frog), -10px 40px var(--frog), 0px 40px var(--frog), 20px 40px var(--frog), 40px 40px var(--frog), 60px 40px var(--frog), 80px 40px black;
+                -60px 40px black, -40px 40px var(--shadow), -20px 40px var(--frog), -10px 40px var(--frog), 0px 40px var(--frog), 20px 40px var(--frog), 40px 40px var(--frog), 60px 40px var(--frog), 80px 40px black,
+                -80px 60px black, -60px 60px var(--shadow),-40px 60px var(--frog), -20px 60px var(--frog), 0px 60px var(--frog), 20px 60px var(--frog), 40px 60px var(--shadow), 60px 60px black;
    
+}
+
+pre{
+    font-family: Consolas,"courier new";
+    background-color: pink;
+    padding: 2px;
+    font-size: 105%;
+    border-radius: 10px;
+    width:400px;
+    border: var(--text) 2px solid;
+    box-shadow: -5px 5px 50px var(--text), 5px -5px 50px  greenyellow, 0px 0px 20px white;
+
+}
+
+pre:hover{
+    animation-name: floating-code;
+    animation-duration: 1s;
+}
+
+pre:not(:hover){
+    transform: translateY(0px);
+
+}
+
+@keyframes floating-code {
+    0% {transform: translateY(0);}
+    25% {transform: translateY(20px);}
+    50% {transform: translateY(20px);}
+    75% {transform: translateY(20px);}
+    100% {transform: translateY(20px);}
 }
 
 /* phone more tiny than puter! */
@@ -73,7 +108,7 @@ button{
         padding: 20px;
         box-shadow: 0px 0px 10px 5px var(--text);
     }
-    p{
+    p, small{
         align-items: center;
         justify-content: center;
     }
