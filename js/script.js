@@ -16,7 +16,7 @@ function theme(){
 //     console.log("Background color: " + color);
 // }
 
-function dark() {
+function toggleTheme() {
     document.body.classList.toggle("dark");
 }
 
