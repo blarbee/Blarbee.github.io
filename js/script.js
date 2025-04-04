@@ -9,31 +9,24 @@ function theme(){
     console.log("Text color: " + randColor);
 }
 
-// const randColor = () =>  {
-//     // root.style.setProperty("--text", "#" + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0').toUpperCase());
-//     let color = "#" + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0').toUpperCase();
-//     root.style.setProperty("--color", color);
-//     console.log("Background color: " + color);
-// }
-
 function toggleTheme() {
     document.body.classList.toggle("dark");
+
+    if (document.body.classList.contains("dark")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
 }
 
-var originalBG = $(".nav a").css("background-color");
+document.addEventListener("DOMContentLoaded", () => {
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark");
+    }
+});
 
-$('.nav li:not(".active") a').mousemove(function(e) {
-    x = e.pageX - this.offsetLeft;
-    y = e.pageY - this.offsetTop;
-    xy = x + " " + y;
-    bgWebKit = "-webkit-gradient(radial, " + xy + ", 0, " + xy + ", 100, from(rgba(255,255,255,0.8)), to(rgba(255,255,255,0.0))), " + originalBG;
-    bgMoz = "-moz-radial-gradient(" + x + "px " + y + "px 45deg, circle, " + lightColor + " 0%, " + originalBG + " " + gradientSize + "px)";
-
-    $(this)
-        .css({background: bgWebKit})
-        .css({background: bgMoz});
-    }).mouseleave(function() {
-    $(this).css({
-        background: originalBG
-    });
+document.addEventListener('mousemove', (e) => {
+    const glow = document.getElementById('cursorGlow');
+    glow.style.top = `${e.clientY}px`;
+    glow.style.left = `${e.clientX}px`;
 });
