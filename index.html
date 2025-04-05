@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <title>Blarb</title>
         <meta charset="utf-8">
@@ -11,55 +11,129 @@
          <div id="cursorGlow"></div>
         <nav id="navBar">
             <ul id="navList">
-              <li class="top-icon"><img class="navIcons" src="/assets/icons8_user.png" alt="Accueil" /> </li>
-              <li class="top-icon"><img class="navIcons" src="/assets/icons8_skills.png" alt="Competence" /><a href="#skillsContainer"></a></li>
-              <li class="top-icon"><img class="navIcons" src="/assets/icons8_experience-.png" alt="Experience" /></li>
-              <li class="top-icon"><img class="navIcons" src="/assets/icons8_student.png" alt="Formation" /></li>
-              <li class="top-icon"><img class="navIcons" src="/assets/icons8_IDE.png" alt="Projet" /></li>
+              <li class="top-icon"><img class="navIcons" src="/assets/icons8_user.png" alt="Accueil"  loading="lazy"/> </li>
+              <li class="top-icon"><img class="navIcons" src="/assets/icons8_skills.png" alt="Competence"  loading="lazy"/><a href="#skillsContainer"></a></li>
+              <li class="top-icon"><img class="navIcons" src="/assets/icons8_experience-.png" alt="Experience"  loading="lazy"/> <a href="#experience"></a> </li>
+              <li class="top-icon"><img class="navIcons" src="/assets/icons8_student.png" alt="Formation" loading="lazy" /></li>
+              <li class="top-icon"><img class="navIcons" src="/assets/icons8_IDE.png" alt="Projet"  loading="lazy"/></li>
           
               <li class="bottom-icon"><img class="navIcons" src="/assets/icons8_moon_light.png" alt="theme" onclick="toggleTheme()" /></li>
             </ul>
           </nav>
           
 
-        <content id="home_content"> 
+        <section id="home_content"> 
             <h1>Nomst Ossfbum</h1>
             <p>Lorem ipsum em cogito ergo sum</p>
             <div id="linksSocials">
                 <ul id="socialsList">
-                    <li><img class="homeIcons" src="/assets/icons8_gitlab.png"/> </li>
-                    <li><img class="homeIcons" src="/assets/icons8_github.png"/> </li>
-                    <li><img class="homeIcons" src="assets/icons8_linkedin.png"/> </li>
-                    <li><img class="homeIcons" src="assets/icons8_resume.png"/> </li>
+                    <li><img class="homeIcons" src="/assets/icons8_gitlab.png" loading="lazy"/> </li>
+                    <li><img class="homeIcons" src="/assets/icons8_github.png" loading="lazy"/> </li>
+                    <li><img class="homeIcons" src="assets/icons8_linkedin.png" loading="lazy"/> </li>
+                    <li><img class="homeIcons" src="assets/icons8_resume.png" loading="lazy"/> </li>
                 </ul>
 
             </div>
            
-        </content>
+        </section>
 
-        <content class="mainContent">
+        <section class="mainContent">
             <div id="skillsContainer">
-                 <h1>Compétences</h1>
-            <div id="skillSet">
-                <div class="skillCard" ><img class="skillIcons" src="assets/icons8_linux.png"/> </div>
-                <div class="skillCard" ><img class="skillIcons" src="assets/icons8_html.png"/> </div>
-                <div class="skillCard" ><img class="skillIcons" src="assets/icons8_C++.png"/> </div>
-                <div class="skillCard" ><img class="skillIcons" src="assets/icons8_android_studio.png"/> </div>
-                <div class="skillCard" ><img class="skillIcons" src="assets/icons8_python.png"/> </div>
-                <div class="skillCard" ><img class="skillIcons" src="assets/icons8_CSS.png"/> </div>
-                <div class="skillCard" ><img class="skillIcons" src="assets/icons8_C.png"/> </div>
-                <div class="skillCard" ><img class="skillIcons" src="assets/icons8_SQL.png"/> </div>
-                <div class="skillCard" ><img class="skillIcons" src="assets/icons8_java.png"/> </div>
-                <div class="skillCard" ><img class="skillIcons" src="assets/icons8_javascript.png"/> </div>
-                <div class="skillCard" ><img class="skillIcons" src="assets/icons8_figma.png"/> </div>
-                <div class="skillCard" ><img class="skillIcons" src="assets/icons8_github.png"/> </div>
+                <h1>Compétence</h1>
+                <div id="skillSet">
+                    <div class="skillCard" ><img class="skillIcons" src="assets/icons8_linux.png" loading="lazy"/> Linux (Ubuntu)</div>
+                    <div class="skillCard" ><img class="skillIcons" src="assets/icons8_html.png" loading="lazy"/> HTML</div>
+                    <div class="skillCard" ><img class="skillIcons" src="assets/icons8_C++.png" loading="lazy"/> C++</div>
+                    <div class="skillCard" ><img class="skillIcons" src="assets/icons8_android_studio.png" loading="lazy"/>Android Studio </div>
+                    <div class="skillCard" ><img class="skillIcons" src="assets/icons8_python.png" loading="lazy"/> Python</div>
+                    <div class="skillCard" ><img class="skillIcons" src="assets/icons8_CSS.png" loading="lazy"/>CSS </div>
+                    <div class="skillCard" ><img class="skillIcons" src="assets/icons8_C.png" loading="lazy"/> C</div>
+                    <div class="skillCard" ><img class="skillIcons" src="assets/icons8_SQL.png" loading="lazy"/> SQL</div>
+                    <div class="skillCard" ><img class="skillIcons" src="assets/icons8_java.png" loading="lazy"/> Java</div>
+                    <div class="skillCard" ><img class="skillIcons" src="assets/icons8_javascript.png" loading="lazy"/> Javascript</div>
+                    <div class="skillCard" ><img class="skillIcons" src="assets/icons8_figma.png" loading="lazy"/> Figma</div>
+                    <div class="skillCard" ><img class="skillIcons" src="assets/icons8_github.png" loading="lazy"/>Github </div>
 
+                </div>
             </div>
-            </div>
-           
+        </section>
 
-        </content>
-       
+        <section class="mainContent"> 
+            <div id="experience">
+                <h1>Expérience</h1>
+   
+            </div>
+        </section>
+
+        <section class="mainContent">
+            <div id="formation">
+                <h1>Formation</h1>
+            </div>
+        </section>
+
+        <section class="mainContent">
+            <div id="projets">
+                <h1>Projets</h1>
+            </div>
+            <div class="projectGrid">
+                <div class="projectCard">
+                    <img class="projectImage" src="assets/image.png" alt="Project Image">
+                    <div class="projectTitle">Project Name</div>
+                    <div class="projectIcons">
+                        <img src="assets/icons8_C++.png" alt="Icon 1" loading="lazy">
+                        <img src="assets/icons8_figma.png" alt="Icon 2" loading="lazy">
+                        <img src="assets/icons8_github.png" alt="Icon 3" loading="lazy">
+                    </div>
+                </div>
+        
+                <div class="projectCard">
+                    <img class="projectImage" src="assets/image.png" alt="Project Image">
+                    <div class="projectTitle">Project Name</div>
+                    <div class="projectIcons">
+                        <img src="assets/icons8_C++.png" alt="Icon 1">
+                        <img src="assets/icons8_figma.png" alt="Icon 2">
+                        <img src="assets/icons8_github.png" alt="Icon 3">
+                    </div>
+                </div>
+        
+                <div class="projectCard">
+                    <img class="projectImage" src="assets/image.png" alt="Project Image">
+                    <div class="projectTitle">Project Name</div>
+                    <div class="projectIcons">
+                        <img src="assets/icons8_C++.png" alt="Icon 1">
+                        <img src="assets/icons8_figma.png" alt="Icon 2">
+                        <img src="assets/icons8_github.png" alt="Icon 3">
+                    </div>
+                </div>
+
+                <div class="projectCard">
+                    <img class="projectImage" src="assets/image.png" alt="Project Image">
+                    <div class="projectTitle">Project Name</div>
+                    <div class="projectIcons">
+                        <img src="assets/icons8_C++.png" alt="Icon 1">
+                        <img src="assets/icons8_figma.png" alt="Icon 2">
+                        <img src="assets/icons8_github.png" alt="Icon 3">
+                    </div>
+                </div>
+
+                <div class="projectCard">
+                    <img class="projectImage" src="assets/image.png" alt="Project Image">
+                    <div class="projectTitle">Project Name</div>
+                    <div class="projectIcons">
+                        <img src="assets/icons8_C++.png" alt="Icon 1">
+                        <img src="assets/icons8_figma.png" alt="Icon 2">
+                        <img src="assets/icons8_github.png" alt="Icon 3">
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+        
+
+
+       <footer>
+        <p>Icons by Icons8.</p>
+       </footer>
 
     </body>
 </html>
