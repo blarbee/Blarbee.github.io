@@ -127,6 +127,55 @@ body{
     cursor: pointer;
 }
 
+/* ===== COMPETENCES */
+
+.mainContent{
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px dashed blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.mainContent h1{
+    font-size: 80px;
+}
+
+#skillsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#skillSet{
+    display: grid;
+    grid-template-columns: repeat(4, auto); 
+    grid-template-rows: repeat(3, auto);
+    gap: 15px; 
+    padding: 20px;
+
+}
+.skillCard{
+    background-color: var(--color-secondary);
+    border-radius: 8px;
+    width: 223px;
+    height: 100px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 16px;
+
+}
+
+.skillIcons{
+    width: 50px;
+    height: 50px;
+}
+
 /* ====== STYLES */
 a{
     font-style:none;
