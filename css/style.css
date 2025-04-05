@@ -60,6 +60,12 @@ body{
     margin-bottom: 0px;
 }
 
+.homeIcons:hover{
+    background-color: var(--color-tertiary);
+    box-shadow: var(--color-secondary) 0 0 2px 2px;
+    border-radius: 8px;
+}
+
 /* ====== LINKS */
 #linksSocials{
     display: flex;
@@ -120,7 +126,7 @@ body{
     margin-bottom: 40px;
 }
 
-.bottom-icon {
+#bottom-icon {
     margin-top: auto;
 }
 
@@ -177,6 +183,8 @@ body{
     font-size: 20px;
 
 }
+
+
 
 .skillIcons{
     width: 50px;
@@ -242,7 +250,7 @@ body{
 }
 
 .projectIcons:hover{
-    
+
 }
 
 
@@ -255,10 +263,12 @@ a{
     justify-content: center;
 }
 
-li :hover{
-    background-color: var(--color-accent);
-    border-radius: 8px;
-}
+
+
+/* .navIcons:hover{
+
+
+} */
 
 #cursorGlow {
     position: fixed;
