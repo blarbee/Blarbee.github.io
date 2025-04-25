@@ -31,6 +31,7 @@ body{
     width:80%;
     margin-left:auto;
     margin-right:auto;
+    font-size: 2vh;
 }
 /* ====== HOME */
 #home_content{
@@ -92,7 +93,7 @@ body{
     /* background-color: #f4effa; */
     box-shadow: #F4EFFA, 20px, 20px, 20px, 20px, 20px;
 }
-/* ====== NAVIGATION */
+/* ======================================================= NAVIGATION */
 #navBar{
   
     font-size: 14px;
@@ -136,7 +137,7 @@ body{
     cursor: pointer;
 }
 
-/* ===== COMPETENCES */
+/* ====================================================== COMPETENCES */
 
 .mainContent{
     width: 100%;
@@ -191,8 +192,43 @@ body{
     height: 50px;
     margin-right: 15px;
 }
+/* =========================================================== EXPERIENCE  */
 
-/* ===== PROJETS */
+#experience{
+    border: solid 2px var(--color-accent);
+    background-color: rgb(199, 175, 228, 0.5);
+    box-shadow: 0px 0px 50px 10px var(--color-accent);
+    border-radius: 10px;
+    width: 100vh;
+    padding: 10px;
+}
+
+.expIcons{
+    width:4vh;
+    height: 4vh;
+    margin-left:5px;
+}
+
+/* ============================================================ FORMATION */
+
+#formation{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formationCard{
+    background-color: rgb(199, 175, 228, 0.5);
+    border: 2px solid var(--color-fourth);
+    box-shadow: 0px 0px 50px 10px var(--color-accent);
+    border-radius: 10px;
+    width: 50vh;
+    height:20vh;
+    padding: 10px;
+    margin:10px;
+}
+
+/* =========================================================== PROJETS */
 
 
 .projectGrid {
@@ -249,9 +285,9 @@ body{
 
 }
 
-.projectIcons:hover{
+/* .projectIcons:hover{
 
-}
+} */
 
 
 
