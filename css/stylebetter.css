@@ -6,7 +6,7 @@
     --yellow: #E5B55B;
 
     --radius: 16px;
-    --fontSize: 1rem;
+    --fontSize: 1.04rem;
 }
 
 .aladin-regular {
@@ -49,8 +49,11 @@
     border-spacing: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
 
-    border: 1px dashed var(--orange);
+    font-size: var(--fontSize);
+
+    /* border: 1px dashed var(--orange); */
     
 }
 
@@ -120,10 +123,15 @@ nav {
 }
 
 #hero hr{
-    height:80px;
+    height:40px;
     background-color: var(--black);
     color: var(--black);
-    margin: auto;
+
+    overflow: visible;
+    width:110%;
+
+    position:relative;
+    left:-5%;
 }
 
 
@@ -209,7 +217,7 @@ nav {
 #hero_socials img{
     width:100%;
 }
-/* =================================================== HERO */
+/* =================================================== ABOUT ME */
 #about_me{
     height: 100vh;
     width:90%;
@@ -220,9 +228,10 @@ nav {
     font-size: 3rem;
     color:var(--black);
     position: relative;
-    top: 33%;
+    top: 28%;
     left:15%;
     z-index: 3;
+    width:fit-content;
 
 }
 
@@ -254,8 +263,12 @@ nav {
 
     margin-bottom: 1%;
 
+    overflow: visible;
+    width:110%;
+
     position:relative;
-    top:25%;
+    top:32%;
+    left:-5%;
 }
 
 #about_venusaur {
@@ -283,7 +296,117 @@ nav {
     left:60%;
 }
 
-/* =================================================== FOOTER */
+/* =================================================== COMPETENCES */
+
+#competence{
+    height: 100vh;
+    width:90%;
+    margin:auto;
+    height: 75vh;
+}
+#competence_h2{
+    color:var(--black);
+    font-size: 3rem;
+}
+#competence_h2:after{
+    content: "CompétencesCompétencesCompétencesCompétences";
+    color:var(--white);
+    text-shadow: -0.5px 0.5px 2px var(--black);
+    opacity: 0.24;
+}
+
+#competence_h3_languages{
+    color: var(--purple);
+    font-size: 2rem;
+
+    width:fit-content;
+
+    position: relative;
+    top:-20.5%;
+    left: 10.5%;
+
+
+    text-shadow: -1px 1px var(--black);
+
+}
+
+#competence_card {
+    border: var(--purple) 4px solid;
+    border-radius: var(--radius);
+
+    width:30%;
+    padding:0.5%;
+
+    position: relative;
+    top:-22%;
+    left: 10%;
+
+    box-shadow: -10px 10px var(--black);
+
+}
+#competence_card li{
+    background-color: var(--purple);
+}
+
+#competence_h3_outils{
+    color: var(--orange);
+    font-size: 2rem;
+
+    width:fit-content;
+
+    position: relative;
+    top:6%;
+    left: 57%;
+
+    text-shadow: -1px 1px var(--black);
+
+}
+
+#outils_card {
+    border: var(--orange) 4px solid;
+    border-radius: var(--radius);
+
+    display:flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* justify-content: center;
+    align-items: center; */
+
+    width:30%;
+    padding:0.5%;
+
+    position: relative;
+    top:5%;
+    left: 55%;
+
+    box-shadow: -10px 10px var(--black);
+}
+#outils_card li{
+    background-color: var(--orange);
+}
+
+#competence ul {
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+    align-items: center;
+    margin:1%;
+    margin-top:1%;
+}
+#competence li{
+    color:var(--white);
+
+    border-radius: 10px;
+
+    width: fit-content;
+
+    padding:4%;
+    margin:2%;
+
+
+}
 
 /* =================================================== FOOTER */
 footer {
