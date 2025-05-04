@@ -3,160 +3,80 @@
     <head>
         <title>Blarb</title>
         <meta charset="utf-8">
-        <link href="css/style.css" rel="stylesheet" >
-        <link href="icon.png" rel="webicon" >
+        <link href="css/stylebetter.css" rel="stylesheet" >
+        <link href="./assets/icons8-été-70(1).png" rel="webicon" >
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Libre+Barcode+128&family=Libre+Barcode+128+Text&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+        
         <script src="js/script.js"></script> 
     </head>
     <body>
-         <div id="cursorGlow"></div>
-        <nav id="navBar">
-            <ul id="navList">
-              <li class="top-icon"><a href="#home_content"><img class="navIcons" src="/assets/icons8_user.png" alt="Accueil"  loading="lazy"/></a> </li>
-              <li class="top-icon"><a href="#skillsContainer"><img class="navIcons" src="/assets/icons8_skills.png" alt="Competence"  loading="lazy"/></a></li>
-              <li class="top-icon"><a href="#experience"><img class="navIcons" src="/assets/icons8_experience-.png" alt="Experience"  loading="lazy"/></a> </li>
-              <li class="top-icon"><a href="#formation"><img class="navIcons" src="/assets/icons8_student.png" alt="Formation" loading="lazy" /></a> </li>
-              <li class="top-icon"><a href="#projets"><img class="navIcons" src="/assets/icons8_IDE.png" alt="Projet"  loading="lazy"/></a> </li>
-          
-              <li id="bottom-icon"><img id="themeIcon" class="navIcons" src="/assets/icons8_moon_light.png" alt="theme" onclick="toggleTheme()" /></li>
-            </ul>
-          </nav>
-          
+        <nav class="roboto-slab-medium">
+            <li id="nav_gauche" >
+                <ul><img id="nav_logo" src="./assets/icons8-été-70(1).png" alt="logo"></ul>
+                <ul> Ouachen Nawal</ul>
+            </li>
 
-        <section id="home_content"> 
-            <h1>Nomst Ossfbum</h1>
-            <p>Lorem ipsum em cogito ergo sum</p>
-            <div id="linksSocials">
-                <ul id="socialsList">
-                    <li><a href="https://gitlab-mi.univ-reims.fr/ouac0006" target="_blank"><img class="homeIcons" src="/assets/icons8_gitlab.png" loading="lazy"/></a> </li>
-                    <li><a href="https://github.com/blarbee?tab=overview&from=2025-04-01&to=2025-04-06" target="_blank"><img class="homeIcons" src="/assets/icons8_github.png" loading="lazy"/> </a> </li>
-                    <li><a href="https://www.linkedin.com/in/nawal-ouachen-055441227/" target="_blank" ><img class="homeIcons" src="assets/icons8_linkedin.png" loading="lazy"/></a> </li>
-                    <!-- <li><a href="" target="_blank"><img class="homeIcons" src="assets/icons8_resume.png" loading="lazy"/> </a> </li> -->
-                </ul>
+            <li id="nav_droite" >
+                <ul><a href="">Compétences</a></ul>
+                <ul><a href="">Expérience</a></ul>
+                <ul><a href="">Formation</a></ul>
+                <ul><a href="">Projets</a></ul>
+                <ul><a href="">Contactez-moi</a></ul>
+            </li>
+        </nav>
+
+        <section id="hero"> 
+            <h1 id="hero_h1" class="titre aladin-regular" >PORTFOLIO</h1>
+            <h1 id="hero_h1" class="titre aladin-regular" >PORTFOLIO</h1>
+            <h1 id="hero_h1" class="titre aladin-regular" >PORTFOLIO</h1>
+            <h1 id="hero_h1" class="titre aladin-regular" >PORTFOLIO</h1>
+            <div id="hero_intro"></div>
+
+            <div id="hero_socials">
+                <img src="./assets/icons8_github.png" alt="github_link">
+                <img src="./assets/icons8_gitlab.png" alt="gitlab_link">
+                <img src="./assets/icons8_linkedin.png" alt="linkedin_link">
 
             </div>
-           
+            <hr>
+        </section>
+ 
+        <section id="about_me"> 
+            <h2 id="about_me_h2" class="titre aladin-regular" >A propos de moi...</h2>
+           <hr>
+           <hr>
+            <div id="about_me_paragraph">
+                <p>Je suis etudiante en jbhbnjvhb annee de licence informatique et je souhaite rjgnger h g iueegbrlw ghiddfgblj df bn bngbbbbb bbbbbb bbb bbbbb bbb bbbb bbb bbbbbbb bbesijfci d s grr</p>
+            </div>
+
+            <div id="about_venusaur">
+                <a href="https://archives.bulbagarden.net/wiki/File:Spr_5b_003_f_s.png#/media/File:Spr_5b_003_f_s.png"><img style="width:100%; height:100%; margin:auto;"  src="https://archives.bulbagarden.net/media/upload/7/71/Spr_5b_003_f_s.png" alt="Shiny Female" height="96" width="96"></a>
+            </div>
+
+            <div id="about_me_langue">
+                <p><strong>Francais</strong>: Langue maternelle</p>
+                <p><strong>Anglais</strong>: Niveau C1</p>
+            </div>
+
         </section>
 
-        <section class="mainContent">
-            <div id="skillsContainer">
-                <h1>Compétence</h1>
-                <div id="skillSet">
-                    <div class="skillCard" ><img class="skillIcons" src="assets/icons8_linux.png" loading="lazy"/> Linux (Ubuntu)</div>
-                    <div class="skillCard" ><img class="skillIcons" src="assets/icons8_html.png" loading="lazy"/> HTML</div>
-                    <div class="skillCard" ><img class="skillIcons" src="assets/icons8_C++.png" loading="lazy"/> C++</div>
-                    <div class="skillCard" ><img class="skillIcons" src="assets/icons8_android_studio.png" loading="lazy"/>Android Studio </div>
-                    <div class="skillCard" ><img class="skillIcons" src="assets/icons8_python.png" loading="lazy"/> Python</div>
-                    <div class="skillCard" ><img class="skillIcons" src="assets/icons8_CSS.png" loading="lazy"/>CSS </div>
-                    <div class="skillCard" ><img class="skillIcons" src="assets/icons8_C.png" loading="lazy"/> C</div>
-                    <div class="skillCard" ><img class="skillIcons" src="assets/icons8_SQL.png" loading="lazy"/> SQL</div>
-                    <div class="skillCard" ><img class="skillIcons" src="assets/icons8_java.png" loading="lazy"/> Java</div>
-                    <div class="skillCard" ><img class="skillIcons" src="assets/icons8_javascript.png" loading="lazy"/> Javascript</div>
-                    <div class="skillCard" ><img class="skillIcons" src="assets/icons8_figma.png" loading="lazy"/> Figma</div>
-                    <div class="skillCard" ><img class="skillIcons" src="assets/icons8_github.png" loading="lazy"/>Github </div>
 
-                </div>
-            </div>
-        </section>
 
-        <section class="mainContent"> 
-            <h1>Expérience</h1>
-            <div id="experience">
-                
-                <h2>Stage en développement (avril - juin 2024)
-                    <img class="expIcons" src="assets/icons8_python.png" alt="Icon 1" loading="lazy">
-                    <img class="expIcons" src="assets/icons8_figma.png" alt="Icon 2" loading="lazy">
 
-                </h2>
-                <h3>Foutech Informatique, Reims</h3>
-                <p>Chargée du développement de projets Python pour répondre aux besoins des clients de Foutech.<br><br>
 
-                    Introduction à  l'utilisation de WordPress pour la création et la gestion de sites web,<br>
-                    ainsi qu'à l'utilisation de Figma pour la modélisation de maquettes.
-
-                </p>
-   
-            </div>
-        </section>
-
-        <section class="mainContent">
-            <h1>Formation</h1>
-            <div id="formation">
-                <div class="formationCard"  style="margin-bottom: 300px;">
-                    <h2>Licence Informatique (ce jour)</h2>
-                    <h3>UFR Sciences Exactes et Naturelles, Reims</h3>
-                </div>
-
-                <div class="formationCard">
-                    <h2>Baccalauréat (juin 2021)</h2>
-                    <h3>Stéphane Hessel, Epernay</h3>
-                    <h4>Spécialités Maths / Numérique et Science de l'Informatique</h4>
-                </div>
-               
-            </div>
-        </section>
-
-        <section class="mainContent">
-            <div id="projets">
-                <h1>Projets</h1>
-            </div>
-            <div class="projectGrid">
-                <div class="projectCard">
-                    <img class="projectImage" src="assets/image.png" alt="Project Image">
-                    <div class="projectTitle">Project Name</div>
-                    <div class="projectIcons">
-                        <img src="assets/icons8_C++.png" alt="Icon 1" loading="lazy">
-                        <img src="assets/icons8_figma.png" alt="Icon 2" loading="lazy">
-                        <img src="assets/icons8_github.png" alt="Icon 3" loading="lazy">
-                    </div>
-                </div>
-        
-                <div class="projectCard">
-                    <img class="projectImage" src="assets/image.png" alt="Project Image">
-                    <div class="projectTitle">Project Name</div>
-                    <div class="projectIcons">
-                        <img src="assets/icons8_C++.png" alt="Icon 1">
-                        <img src="assets/icons8_figma.png" alt="Icon 2">
-                        <img src="assets/icons8_github.png" alt="Icon 3">
-                    </div>
-                </div>
-        
-                <div class="projectCard">
-                    <img class="projectImage" src="assets/image.png" alt="Project Image">
-                    <div class="projectTitle">Project Name</div>
-                    <div class="projectIcons">
-                        <img src="assets/icons8_C++.png" alt="Icon 1">
-                        <img src="assets/icons8_figma.png" alt="Icon 2">
-                        <img src="assets/icons8_github.png" alt="Icon 3">
-                    </div>
-                </div>
-
-                <div class="projectCard">
-                    <img class="projectImage" src="assets/image.png" alt="Project Image">
-                    <div class="projectTitle">Project Name</div>
-                    <div class="projectIcons">
-                        <img src="assets/icons8_C++.png" alt="Icon 1">
-                        <img src="assets/icons8_figma.png" alt="Icon 2">
-                        <img src="assets/icons8_github.png" alt="Icon 3">
-                    </div>
-                </div>
-
-                <div class="projectCard">
-                    <img class="projectImage" src="assets/image.png" alt="Project Image">
-                    <div class="projectTitle">Project Name</div>
-                    <div class="projectIcons">
-                        <img src="assets/icons8_C++.png" alt="Icon 1">
-                        <img src="assets/icons8_figma.png" alt="Icon 2">
-                        <img src="assets/icons8_github.png" alt="Icon 3">
-                    </div>
-                </div>
-               
-            </div>
-        </section>
+         
         
 
 
        <footer>
-        <p>Icons by Icons8.</p>
+            <ul id="footer_list" >
+                <li><img style="width:50%; height:50%; margin:auto;" src="https://archives.bulbagarden.net/media/upload/2/2e/Spr_b_5b_003_f_s.png" alt="Shiny Female" height="96" width="96"></a></li>
+                 <li class="roboto-slab-medium" >Copyright © 2025 Ouachen Nawal</li>
+                <li class="libre-barcode-128-text-regular" >Bulbasaur</li>
+            </ul>
        </footer>
 
     </body>
