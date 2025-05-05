@@ -53,7 +53,7 @@
 
     font-size: var(--fontSize);
 
-    border: 1px dashed var(--orange);
+    /* border: 0.5px dashed var(--purple); */
     
 }
 
@@ -234,8 +234,8 @@ nav {
     border: 5px solid var(--yellow) ;
     border-radius: var(--radius);
 
-    width: 35%;
-    height:35%;
+    width: 30vw;
+    height:30vh;
 
     padding:2%;
 
@@ -268,8 +268,8 @@ nav {
     background-color: var(--orange);
     box-shadow: -10px 10px var(--black);
 
-    width:14%;
-    height: 22%;
+    width:14vw;
+    height: 22vh;
 
     position: absolute;
     right:30vw;
@@ -455,9 +455,94 @@ nav {
     width:90%;
     margin:auto;
     height: 75vh;
-    background-color: gold;
+    /* background-color: gold; */
 
     position:relative;
+}
+
+#experience_h2 {
+    color:var(--black);
+    font-size: 3rem;
+    width: fit-content;
+
+    position: absolute;
+    top:1vh;
+    left: 5vw;
+
+}
+
+#stage_1{
+    border:solid 8px var(--black);
+    padding: 1%;
+    padding-bottom: 2%;
+
+    width:48vw;
+
+    position:absolute;
+    top:15vh;
+    left:5vw;
+
+}
+
+#experience_h3_stage{
+    color: var(--black);
+    font-size: 2rem;
+
+    width:fit-content;
+
+    position: absolute;
+    left:15vw;
+    top:11vh;
+    z-index: 3;
+
+    text-shadow: -1px 1px var(--black);
+}
+
+#experience_competence{
+    background-color: var(--black);
+    color:var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height:fit-content;
+    text-align: center;
+    padding:1%;
+
+    position: absolute;
+    bottom:30vh;
+    left:30vw;
+}
+
+#formation_card{
+    background-color: var(--orange);
+    color:var(--black);
+    width: fit-content;
+
+    padding: 1%;
+
+    position: absolute;
+    bottom: 5vh;
+    right: 10vw;
+}
+
+.formation_info{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    /* width: 50vw; */
+}
+.formation_info:first-child{
+    margin-bottom: 8%;
+}
+.formation_info_date{
+    width:8vw;
+    font-size: 1.5rem;
+}
+.formation_info_date:before{
+    content: '✦._';
+    color: var(--white)
+
 }
 
 /* =================================================== FOOTER */
