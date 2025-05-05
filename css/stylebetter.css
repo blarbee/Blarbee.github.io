@@ -53,7 +53,7 @@
 
     font-size: var(--fontSize);
 
-    /* border: 1px dashed var(--orange); */
+    border: 1px dashed var(--orange);
     
 }
 
@@ -74,15 +74,14 @@ nav {
 
     width:90%;
     margin: auto;
-    margin-top: 0.5%;
+    margin-top: 0.5vh;
     padding:0.2%;
 
     position:sticky;
     z-index: 10;
-    top: 0.5%;
+    top: 0.5vh;
 
     font-size: var(--fontSize);
-
  
     display: flex;
     justify-content: space-between;
@@ -105,33 +104,33 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     width:60%;
-    
-
 }
 /* =================================================== HERO */
 
 #hero {
     width:90%;
     margin:auto;
-    height: 100vh;
+    height: 90vh;
     background-image: url("../assets/Hero4.0.png");
     background-repeat: no-repeat;
     background-size:cover;
 
-    background-color: yellow;
+    position:relative;
 
 }
 
 #hero hr{
-    height:40px;
+    height:5vh;
     background-color: var(--black);
     color: var(--black);
 
     overflow: visible;
     width:110%;
 
-    position:relative;
+    position:absolute;
+    bottom:0;
     left:-5%;
+    
 }
 
 
@@ -141,8 +140,7 @@ nav {
     z-index: -10;
     font-size: 8rem;
 
-    margin-left:10%;
-
+    margin-left:10vw;
 
     padding: 0;
     line-height: 1;
@@ -151,35 +149,24 @@ nav {
 }
 
 #hero_h1:nth-child(1) {
-    margin-top: 5%;
+    margin-top: 5vh;
 }
 
 #hero_h1:nth-child(2) {
-    margin-left: 20%;
+    margin-left: 15vw;
 }
 
 #hero_h1:nth-child(3) {
-    margin-left: 30%;
+    margin-left: 30vw;
 }
 
 #hero_h1:nth-child(4) {
-    margin-left: 40%;
-}
-
-#hero_img{
-    width:42%;
-
-    border-radius: 16px;
-    background-color: var(--orange);
-    border: 2px solid var(--black);
-    /* box-shadow: ; */
-
-
+    margin-left: 40vw;
 }
 
 #hero_intro{
-    width: 42%;
-    height: 42%;
+    width: 40vw;
+    height: 40vh;
 
     border-radius: var(--radius);
     background-color: var(--orange);
@@ -187,8 +174,9 @@ nav {
 
     position: absolute;
     z-index: 1;
-    top:44%;
-    left:15%;
+    left:5vw;
+    top:26vh;
+
     
 
 }
@@ -210,8 +198,8 @@ nav {
 
     position: absolute;
     z-index: 2;
-    top:40%;
-    right:25%;
+    top:20vh;
+    right:20vh;
 }
 
 #hero_socials img{
@@ -222,14 +210,17 @@ nav {
     height: 100vh;
     width:90%;
     margin:auto;
-    height: 100vh;
+    height: 90vh;
+    position:relative;
 }
 #about_me_h2 {
     font-size: 3rem;
     color:var(--black);
-    position: relative;
-    top: 28%;
-    left:15%;
+    position: absolute;
+
+    top:28vh;
+    left:15vw;
+
     z-index: 3;
     width:fit-content;
 
@@ -240,7 +231,7 @@ nav {
     color:var(--white);
     font-size: var(--fontSize);
 
-    border: 5px dashed var(--yellow) ;
+    border: 5px solid var(--yellow) ;
     border-radius: var(--radius);
 
     width: 35%;
@@ -248,9 +239,10 @@ nav {
 
     padding:2%;
 
-    position: relative;
-    top: 15%;
-    left:55%;
+    position: absolute;
+    right:5vw;
+    top:30vh;
+
 }
 #about_me_paragraph p{
     width:100%;
@@ -259,28 +251,29 @@ nav {
 
 #about_me  hr{
     height: 20px;
-    background: var(--yellow);
+    background: var(--orange);
 
     margin-bottom: 1%;
 
     overflow: visible;
     width:110%;
 
-    position:relative;
-    top:32%;
+    position:absolute;
+    top:55vh;
     left:-5%;
+
 }
 
 #about_venusaur {
     background-color: var(--orange);
     box-shadow: -10px 10px var(--black);
 
-    width:12%;
+    width:14%;
     height: 22%;
 
-    position: relative;
-    top: 5%;
-    left:50%;
+    position: absolute;
+    right:30vw;
+    bottom:20vh;
 }
 
 #about_me_langue {
@@ -291,29 +284,79 @@ nav {
     width: fit-content;
     padding: 0.5%;
 
-    position: relative;
-    top: -11%;
-    left:60%;
+    position: absolute;
+    right:15vw;
+    bottom:26vh;
+
 }
 
 /* =================================================== COMPETENCES */
 
 #competence{
-    height: 100vh;
     width:90%;
     margin:auto;
     height: 75vh;
+
+    position:relative;
+}
+#competence  hr{
+    height: 10vh;
+    margin-bottom: 1%;
+    overflow: visible;
+    width:110%;
+    z-index:-1;
+    position: absolute;
+    left:-5%;
+
 }
 #competence_h2{
     color:var(--black);
     font-size: 3rem;
+    width: fit-content;
+
+    position: absolute;
+    top:5vh;
+    left: 5vw;
 }
-#competence_h2:after{
-    content: "CompétencesCompétencesCompétencesCompétences";
+
+#competence_h2:nth-child(2) {
+    position: absolute;
+    top:10vh;
+    left: 8vw;
+
+    color:var(--white);  
+    text-shadow: -0.5px 0.5px 2px var(--black);
+    opacity: 0.30;  
+}
+#competence_h2:nth-child(3) {
+    position: absolute;
+    top:15vh;
+    left: 11vw;
+ 
+    color:var(--white);  
+    text-shadow: -0.5px 0.5px 2px var(--black);
+    opacity: 0.20;  
+}
+
+#competence_h2:nth-child(4) {
+    position: absolute;
+    top:20vh;
+    left:13vw;
+ 
+    color:var(--white);  
+    text-shadow: -0.5px 0.5px 2px var(--black);
+    opacity: 0.10;  
+}
+
+/* #competence_h2:after{
+    content: " Compétences Compétences Compétences Compétences";
     color:var(--white);
     text-shadow: -0.5px 0.5px 2px var(--black);
     opacity: 0.24;
-}
+} */
+
+
+
 
 #competence_h3_languages{
     color: var(--purple);
@@ -321,25 +364,25 @@ nav {
 
     width:fit-content;
 
-    position: relative;
-    top:-20.5%;
-    left: 10.5%;
-
+    position: absolute;
+    top:21vh;
+    left:16vw;
+    z-index: 3;
 
     text-shadow: -1px 1px var(--black);
-
 }
 
 #competence_card {
     border: var(--purple) 4px solid;
     border-radius: var(--radius);
+    background-color: var(--white);
 
-    width:30%;
-    padding:0.5%;
+    width:30vw;
+    /* padding:0.5%; */
 
-    position: relative;
-    top:-22%;
-    left: 10%;
+    position: absolute;
+    top:25vh;
+    left:15vw;
 
     box-shadow: -10px 10px var(--black);
 
@@ -354,9 +397,10 @@ nav {
 
     width:fit-content;
 
-    position: relative;
-    top:6%;
-    left: 57%;
+    position: absolute;
+    right:23vw;
+    top:34vh;
+    z-index: 3;
 
     text-shadow: -1px 1px var(--black);
 
@@ -365,19 +409,17 @@ nav {
 #outils_card {
     border: var(--orange) 4px solid;
     border-radius: var(--radius);
+    background-color: var(--white);
 
     display:flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
-    /* justify-content: center;
-    align-items: center; */
 
-    width:30%;
-    padding:0.5%;
+    width:fit-content;
+    /* padding:0.5%; */
 
-    position: relative;
-    top:5%;
-    left: 55%;
+    position: absolute;
+    right:10vw;
+    top:38vh;
 
     box-shadow: -10px 10px var(--black);
 }
@@ -404,8 +446,18 @@ nav {
 
     padding:4%;
     margin:2%;
+}
 
 
+/* =================================================== EXPERIENCE */
+#experience {
+    height: 100vh;
+    width:90%;
+    margin:auto;
+    height: 75vh;
+    background-color: gold;
+
+    position:relative;
 }
 
 /* =================================================== FOOTER */
