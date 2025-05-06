@@ -99,6 +99,7 @@ nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-left: 0.8%;
 
 }
 #nav_droite {
@@ -179,6 +180,8 @@ nav {
     left:5vw;
     top:26vh;
 
+    opacity: 0.5;
+
     
 
 }
@@ -194,7 +197,7 @@ nav {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
 
@@ -205,7 +208,8 @@ nav {
 }
 
 #hero_socials img{
-    width:100%;
+    width:50px;
+    margin: 2%;
 }
 /* =================================================== ABOUT ME */
 #about_me{
@@ -237,7 +241,8 @@ nav {
     top: 20vh;
 }
 #about_me_paragraph {
-    background-color: var(--white);
+    /* background-color: var(--white); */
+    background-image: linear-gradient(var(--white), var(--yellow));
     color:var(--black);
     font-size: var(--fontSize);
 
@@ -388,6 +393,7 @@ nav {
 }
 #competence_card li{
     background-color: var(--purple);
+
 }
 #container_outils{
 
@@ -454,8 +460,8 @@ nav {
 
 
 #competence li:hover{
-    transform:translateY(-2px) translateX(2px);
-    box-shadow: -2px 2px var(--black);
+    /* transform:translateY(-2px) translateX(2px);
+    box-shadow: -2px 2px var(--black); */
 }
 
 /* =================================================== EXPERIENCE */
@@ -561,8 +567,8 @@ nav {
 }
 
 #experience_competence:hover{
-    transform:translateY(2px) translateX(2px);
-    box-shadow: -10px -10px var(--orange);
+    /* transform:translateY(2px) translateX(2px);
+    box-shadow: -10px -10px var(--orange); */
 }
 
 #formation_card{
@@ -613,14 +619,93 @@ nav {
     height:75vh;
     width:90%;
     margin:auto;
-    height: 80vh;
+    height: fit-content;
     margin-bottom: 20vh;;
-    background-color: gold;
+    /* background-color: gold; */
 
     position:relative;
 
 }
 
+#container_projets{
+    /* background-color: red; */
+    position:relative;
+    top:15vh;
+    margin: auto;
+    width:90%;
+
+    color:var(--black);
+
+    display:flex;
+    flex-direction: row, 3;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#projets_h2{
+
+    font-size: 3rem;
+    width: fit-content;
+
+    position: absolute;
+    top:5vh;
+    left: 5vw;
+}
+
+.project_card{
+    border: 10px solid var(--purple);
+    background-image: linear-gradient(var(--white), var(--yellow));
+    border-radius: var(--radius);
+    width: 25vw;
+    padding:2%;
+    margin:1%;
+
+    position:relative;
+
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#projets img{
+    width:20vw;
+    margin:2%;
+
+    border: 2px solid --black;
+    border-radius: 10px;
+}
+#projets img:hover{
+    transform:translateY(-6px) translateX(6px);
+    box-shadow: -6px 6px var(--purple);
+
+
+}
+#project_name{
+    font-size: 2rem;
+
+}
+
+#projets ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:2%;
+}
+#projets li{
+    /* border:solid 2px var(--purple); */
+    background-color: var(--black);
+    color:var(--white);
+    font-size: 0.7rem;
+    border-radius: 12px;
+
+    padding:2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin:3%;
+}
 
 /* =================================================== FOOTER */
 footer {
