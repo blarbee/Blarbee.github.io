@@ -53,6 +53,8 @@
 
     font-size: var(--fontSize);
 
+    line-height: 25px;
+
     /* border: 0.5px dashed var(--purple); */
     
 }
@@ -225,24 +227,29 @@ nav {
     width:fit-content;
 
 }
+#container_about_me {
+    /* border: solid 9px red; */
+    /* background-color: red; */
+    width: fit-content;
 
+    position: relative;
+    left: 50vw;
+    top: 20vh;
+}
 #about_me_paragraph {
-    background-color: var(--black);
-    color:var(--white);
+    background-color: var(--white);
+    color:var(--black);
     font-size: var(--fontSize);
 
-    border: 5px solid var(--yellow) ;
+    border: 10px solid var(--black) ;
     border-radius: var(--radius);
 
-    width: 30vw;
-    height:30vh;
+    width: 35vw;
+    /* height:30vh; */
 
-    padding:2%;
+    padding:7%;
 
-    position: absolute;
-    right:5vw;
-    top:30vh;
-
+    position: relative;
 }
 #about_me_paragraph p{
     width:100%;
@@ -259,35 +266,23 @@ nav {
     width:110%;
 
     position:absolute;
-    top:55vh;
+    top:40vh;
     left:-5%;
-
 }
 
-#about_venusaur {
-    background-color: var(--orange);
-    box-shadow: -10px 10px var(--black);
 
-    width:14vw;
-    height: 22vh;
-
-    position: absolute;
-    right:30vw;
-    bottom:20vh;
-}
 
 #about_me_langue {
     background-color: var(--white);
     color: var(--purple);
-    border: 4px solid var(--purple);
+    border: 5px solid var(--purple);
     
     width: fit-content;
-    padding: 0.5%;
+    padding: 2%;
 
-    position: absolute;
-    right:15vw;
-    bottom:26vh;
-
+    position: relative;
+    bottom:2vh;
+    left:-5vw;
 }
 
 /* =================================================== COMPETENCES */
@@ -299,6 +294,7 @@ nav {
 
     position:relative;
 }
+
 #competence  hr{
     height: 10vh;
     margin-bottom: 1%;
@@ -356,7 +352,12 @@ nav {
 } */
 
 
+#container_competence{
+    position: relative;
+    width:fit-content;
+    left:15vw;
 
+}
 
 #competence_h3_languages{
     color: var(--purple);
@@ -364,9 +365,8 @@ nav {
 
     width:fit-content;
 
-    position: absolute;
-    top:21vh;
-    left:16vw;
+    position: relative;
+
     z-index: 3;
 
     text-shadow: -1px 1px var(--black);
@@ -380,9 +380,8 @@ nav {
     width:30vw;
     /* padding:0.5%; */
 
-    position: absolute;
-    top:25vh;
-    left:15vw;
+    position: relative;
+
 
     box-shadow: -10px 10px var(--black);
 
@@ -390,16 +389,21 @@ nav {
 #competence_card li{
     background-color: var(--purple);
 }
+#container_outils{
 
+    position: relative;
+    width:fit-content;
+    left: 55vw;
+    top:30vh;
+}
 #competence_h3_outils{
     color: var(--orange);
     font-size: 2rem;
 
     width:fit-content;
 
-    position: absolute;
-    right:23vw;
-    top:34vh;
+    position: relative;
+
     z-index: 3;
 
     text-shadow: -1px 1px var(--black);
@@ -417,9 +421,9 @@ nav {
     width:fit-content;
     /* padding:0.5%; */
 
-    position: absolute;
-    right:10vw;
-    top:38vh;
+    position: relative;
+    /* right:10vw;
+    top:38vh; */
 
     box-shadow: -10px 10px var(--black);
 }
@@ -449,38 +453,80 @@ nav {
 }
 
 
+#competence li:hover{
+    transform:translateY(-2px) translateX(2px);
+    box-shadow: -2px 2px var(--black);
+}
+
 /* =================================================== EXPERIENCE */
 #experience {
     height: 100vh;
     width:90%;
     margin:auto;
-    height: 75vh;
+    height: 80vh;
     /* background-color: gold; */
 
     position:relative;
 }
+#container_experience{
+    /* background-color: red; */
+    width: fit-content;
 
-#experience_h2 {
+    position: absolute;
+    left: 7vw;
+    top:15vh;
+}
+
+#experience_h2{
     color:var(--black);
     font-size: 3rem;
     width: fit-content;
 
     position: absolute;
-    top:1vh;
+    top:5vh;
     left: 5vw;
+}
 
+#experience_h2:nth-child(2) {
+    position: absolute;
+    top:10vh;
+    left: 8vw;
+
+    color:var(--white);  
+    text-shadow: -0.5px 0.5px 2px var(--black);
+    opacity: 0.30;  
+}
+#experience_h2:nth-child(3) {
+    position: absolute;
+    top:15vh;
+    left: 11vw;
+ 
+    color:var(--white);  
+    text-shadow: -0.5px 0.5px 2px var(--black);
+    opacity: 0.20;  
+}
+
+#experience_h2:nth-child(4) {
+    position: absolute;
+    top:20vh;
+    left:13vw;
+ 
+    color:var(--white);  
+    text-shadow: -0.5px 0.5px 2px var(--black);
+    opacity: 0.10;  
 }
 
 #stage_1{
-    border:solid 8px var(--black);
-    padding: 1%;
+    border:solid 10px var(--black);
+    background-color: var(--white);
+    padding: 1.5%;
     padding-bottom: 2%;
 
-    width:48vw;
+    width:55vw;
 
-    position:absolute;
-    top:15vh;
-    left:5vw;
+    position:relative;
+    /* top:15vh;
+    left:5vw; */
 
 }
 
@@ -490,12 +536,12 @@ nav {
 
     width:fit-content;
 
-    position: absolute;
-    left:15vw;
-    top:11vh;
+    position: relative;
+    left:3vw;
+    top:0vh;
     z-index: 3;
 
-    text-shadow: -1px 1px var(--black);
+    text-shadow: -1px 1px var(--white);
 }
 
 #experience_competence{
@@ -509,9 +555,14 @@ nav {
     text-align: center;
     padding:1%;
 
-    position: absolute;
-    bottom:30vh;
+    position: relative;
+    bottom:2.5vh;
     left:30vw;
+}
+
+#experience_competence:hover{
+    transform:translateY(2px) translateX(2px);
+    box-shadow: -10px -10px var(--orange);
 }
 
 #formation_card{
@@ -519,11 +570,11 @@ nav {
     color:var(--black);
     width: fit-content;
 
-    padding: 1%;
+    padding: 1.5vw;
 
-    position: absolute;
-    bottom: 5vh;
-    right: 10vw;
+    position: relative;
+    top: 50vh;
+    left: 50vw;
 }
 
 .formation_info{
@@ -536,7 +587,7 @@ nav {
     margin-bottom: 8%;
 }
 .formation_info_date{
-    width:8vw;
+    width:10vw;
     font-size: 1.5rem;
 }
 .formation_info_date:before{
@@ -544,6 +595,32 @@ nav {
     color: var(--white)
 
 }
+
+
+#h2_formation{
+    color:var(--black);
+    font-size: 3rem;
+    width: fit-content;
+
+    position: absolute;
+    top:45vh;
+    left: 65vw;
+}
+
+
+/* =================================================== PROJETS */
+#projets{
+    height:75vh;
+    width:90%;
+    margin:auto;
+    height: 80vh;
+    margin-bottom: 20vh;;
+    background-color: gold;
+
+    position:relative;
+
+}
+
 
 /* =================================================== FOOTER */
 footer {
@@ -577,3 +654,4 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
