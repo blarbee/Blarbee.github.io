@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <link href="css/stylebetter.css" rel="stylesheet" >
         
-        <link href="./assets/star_icon.ico" rel="icon" >
+        <link href="./assets/four_star.png" rel="icon" >
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,22 +14,22 @@
         <script src="js/script.js"></script> 
     </head>
     <body>
-        <nav class="roboto-slab-medium">
+        <nav class="roboto-slab-regular">
             <li id="nav_gauche" >
                 <ul><img id="nav_logo" src="./assets/four_star.png" alt="logo"></ul>
-                <ul><a href="#hero">Ouachen Nawal</a></ul>
+                <ul><a href="#hero"class="roboto-slab-medium">Ouachen Nawal</a></ul>
             </li>
 
             <li id="nav_droite" >
                 <ul><a href="#competence">Compétences</a></ul>
                 <ul><a href="#experience">Expérience</a></ul>
-                <ul><a href="#h2_formation">Formation</a></ul>
+                <ul><a href="#experience">Formation</a></ul>
                 <ul><a href="#projets">Projets</a></ul>
-                <ul><a href="#hero_socials">Contactez-moi</a></ul>
+                <!-- <ul><a href="#hero_socials">Contactez-moi</a></ul> -->
             </li>
         </nav>
 
-        <section id="hero"> 
+        <!-- <section id="hero"> 
             <h1 id="hero_h1" class="titre aladin-regular" >PORTFOLIO</h1>
             <h1 id="hero_h1" class="titre aladin-regular" >PORTFOLIO</h1>
             <h1 id="hero_h1" class="titre aladin-regular" >PORTFOLIO</h1>
@@ -43,18 +43,19 @@
 
             </div>
             <hr>
-        </section>
+        </section> -->
  
         <section id="about_me"> 
            
-            <h2 id="about_me_h2" class="titre aladin-regular" >A propos de moi...</h2>
-           <hr>
-           <hr>
-           <div id="container_about_me">
+
+       
+            <div id="container_about_me">
+                <h1 id="about_me_h2" class="titre aladin-regular" >PORTFOLIO</h1>
                 <div id="about_me_paragraph" class="roboto-slab-medium">
-                    <p>Bonjour! Je suis actuellement étudiante en licence d’informatique et je souhaite élargir mon horizon de connaissances en programmation ainsi qu’en design.
+                    <!-- <p>Bonjour! Je suis actuellement étudiante en licence d’informatique et je souhaite élargir mon horizon de connaissances en programmation ainsi qu’en design.
                         <br><br>
-                        N’hésitez pas à consulter les projets que j’ai réalisés par le passé !</p>
+                        N’hésitez pas à consulter les projets que j’ai réalisés par le passé !</p> -->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
 
 
@@ -63,66 +64,85 @@
                     <p><strong>Francais</strong>: Langue maternelle</p>
                     <p><strong>Anglais</strong>: Niveau C1</p>
                 </div>
+                
 
             </div>
 
+            <div id="container_socials">
+                <h2 id="hero_h2" class="titre_h3 aladin-regular">Contactez-moi!</h2>
+                <ul id="hero_socials">
+                    <li><div><img src="./assets/icons8-gitlab.svg" alt="gitlab_link"></div>nwl.ouachen@gmail.com</li>
+                    <li><a href="https://github.com/blarbee" target="_blank"><img src="./assets/icons8-github.svg" alt="github_link"></a>github.com/blarbee</li>
+                    <li><a href="https://www.linkedin.com/in/nawal-ouachen-055441227/" target="_blank"><img src="./assets/icons8-linkedin.svg" alt="linkedin_link"></a>linkedin.com/in/nawal-ouachen</li>
+
+                </ul>
+            </div>
+
         </section>
+
+        <hr style="background-color: var(--purple); height: 5vh;" >
+       
 
         <section id="competence"> 
             <h2 id="competence_h2" class="titre aladin-regular" >Compétences_.✦</h2>
-            <h2 id="competence_h2" class="titre aladin-regular" >Compétences_.✦</h2>
-            <h2 id="competence_h2" class="titre aladin-regular" >Compétences_.✦</h2> 
-            <!-- <h2 id="competence_h2" class="titre aladin-regular" >Compétences</h2> -->
-            <div id="container_outils">
-                <h3 id="competence_h3_outils" class="titre aladin-regular" >Logiciels et outils</h3>
-                <div id="outils_card" class="roboto-slab-medium">
-                    <ul>
-                        <li>VS Code</li>
-                        <li>Android Studio</li>
-                        <li>Git/Github</li>
-                        <li>Figma</li>
-                        <li>Linux</li>
-                    </ul>
+            <div id="lists">
+                <div class="bland_container">
+                
+                    <h3 class="titre_h3 aladin-regular" >Languages de programmation</h3>
+                    <div  class="card roboto-slab-medium">
+                        <ul>
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>Makefile</li>
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>HTML/CSS</li>
+                            <li>JS</li>
+                            <li>SQL</li>
+                            <li>PHP</li>
+                        </ul>
+                    </div>
+    
+                </div>
+    
+                <div class="bland_container">
+    
+                    <h3 id="h3_tools" class="titre_h3 aladin-regular" >Logiciels et outils</h3>
+                    <div id="card_tools" class="card roboto-slab-medium">
+                        <ul>
+                            <li>VS Code</li>
+                            <li>Android Studio</li>
+                            <li>Git/Github</li>
+                            <li>Figma</li>
+                            <li>Linux</li>
+
+                        
+                        </ul>
+                    </div>
+    
                 </div>
             </div>
 
-            
-            <div id="container_competence">
-                <h3 id="competence_h3_languages" class="titre aladin-regular" >Languages de programmation</h3>
-                <div id="competence_card" class="roboto-slab-medium">
-                    <ul>
-                        <li>C</li>
-                        <li>C++</li>
-                        <li>Java</li>
-                        <li>Python</li>
-                        <li>HTML/CSS</li>
-                        <li>JS</li>
-                        <li>SQL</li>
-                        <li>PHP</li>
-                    </ul>
-                </div>
-            </div>
-            
-
-
-            <hr style="background-color: var(--purple);position:relative; top:-6vh;" >
-            <hr style="background-color: var(--orange);position:relative; top:-8vh;" >
+           
+        
         </section>
 
+
+        <hr >
+    
+
         <section id="experience"> 
-            <h2 id="experience_h2" class="titre aladin-regular" >Expérience _.✦</h2>
-            <h2 id="experience_h2" class="titre aladin-regular" >Expérience _.✦</h2>
             <h2 id="experience_h2" class="titre aladin-regular" >Expérience _.✦</h2>
 
             <div id="container_experience">
                 <h3 id="experience_h3_stage" class="titre aladin-regular" >Stage en développement (avril - juin 2024)</h3>
                 <div id="stage_1" class="roboto-slab-medium">
-                <h4 style="margin-bottom: 1%;">Foutech Informatique, Reims</h4>
-                <p style=" font-weight: 400; position:relative;">
-                    Chargée du développement de projets Python pour répondre aux besoins des clients de Foutech, j'ai eu l'occasion de concevoir une interface graphique destinée à une commande CLI.
-                    <br><br>J'ai également été initiée à l'utilisation de WordPress pour la création et la gestion de sites web, ainsi qu'à la modélisation de maquettes à l'aide de Figma.
+                    <h4 style="margin-bottom: 1%;" class="roboto-slab-bold">Foutech Informatique, Reims</h4>
+                    <p style=" font-weight: 400; position:relative;" class="roboto-slab-medium">
+                        Chargée du développement de projets Python pour répondre aux besoins des clients de Foutech, j'ai eu l'occasion de concevoir une interface graphique destinée à une commande CLI.
+                        <br><br>J'ai également été initiée à l'utilisation de WordPress pour la création et la gestion de sites web, ainsi qu'à la modélisation de maquettes à l'aide de Figma.
 
-                </p>
+                    </p>
                 </div>
 
                 <div id="experience_competence" class="roboto-slab-medium">
@@ -130,23 +150,29 @@
                 </div>
             </div>
 
-            <h2 id="h2_formation" class="titre aladin-regular" >Formation _.✦</h2>
-            <div id="formation_card" class="roboto-slab-medium">
-                <div class="formation_info">
-                    <p class="titre aladin-regular formation_info_date" >Ce jour</p>
-                    <p style="font-size: 0.9rem; font-weight: 400;"><strong>Licence informatique</strong><br>UFR Sciences Exactes et Naturelles, Reims</p>
-                </div>
+            <div id="container_formation">
+                <!-- <div> -->
+                    <h2 id="h2_formation" class="titre aladin-regular" >Formation _.✦</h2>
+                    <div id="formation_card" class="roboto-slab-medium">
+                        <div class="formation_info">
+                            <p class="titre aladin-regular formation_info_date" >Ce jour</p>
+                            <p style="font-size: 0.9rem; font-weight: 400;"><strong>Licence informatique</strong><br>UFR Sciences Exactes et Naturelles, Reims</p>
+                        </div>
 
 
-                <div class="formation_info">
-                    <div class="titre aladin-regular formation_info_date">2021</div>
-                    <div>
-                        <p><strong>Baccalauréat</strong></p>
-                        <p style="font-size: 0.9rem; font-weight: 400;">Stéphane Hessel, Epernay</p>
-                        <p style="font-size: 0.8rem; font-weight: 300;">Spécialité Maths<br>Spécialité Numérique et Science de l'Informatique</p>
+                        <div class="formation_info">
+                            <div class="titre aladin-regular formation_info_date">2021</div>
+                            <div>
+                                <p><strong>Baccalauréat</strong></p>
+                                <p style="font-size: 0.9rem; font-weight: 400;">Stéphane Hessel, Epernay</p>
+                                <p style="font-size: 0.8rem; font-weight: 300;">Spécialité Maths<br>Spécialité Numérique et Science de l'Informatique</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>            
+                <!-- </div> -->
+                
+            </div>
+                        
 
 
 
@@ -157,28 +183,78 @@
             <div id="container_projets">
 
                 <div class="project_card">
-                    <div id="project_name" class="titre aladin-regular" >Sudoku</div>
-                    <a target="_blank" href="https://github.com/blarbee/sudoku.git"><img src="assets/sudoku.png" alt=""></a>
-                    <div id="date" class="roboto-slab-medium">Avril 2025</div>
-                    <p class="roboto-slab-regular">Le Sudoku est mon puzzle préféré, je me devais donc d'en recréer un de mes propres mains.<br><br>Pour cela j'ai utilisé l'API <a target="_blank" href="https://sudoku-api.vercel.app/">Dosuku</a> pour recupérer des grilles de différentes difficultés ainsi que leur grille solution associé.</p>
-                    <ul class="roboto-slab-medium">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                    </ul>
+                    
+                    <div class="left_project_card">
+                        <h3 class="titre_h3 aladin-regular" >Sudoku</h3>
+                        <a target="_blank" href="https://github.com/blarbee/sudoku.git"><img src="assets/sudoku.png" alt=""></a>
+                        <div class="date roboto-slab-medium">Avril 2025</div>
+                    </div>
+                    
+                    <div class="right_project_card">
+                        <p class="roboto-slab-medium">Le Sudoku est mon puzzle préféré, je me devais donc d'en recréer un de mes propres mains.<br><br>Pour cela j'ai utilisé l'API <a target="_blank" href="https://sudoku-api.vercel.app/">Dosuku</a> pour recupérer des grilles de différentes difficultés ainsi que leur grille solution associé.</p>
+                        <div class="skill_lists">
+                            <ul class="list_languages roboto-slab-medium">
+                                <li>HTML/CSS</li>
+                                <li>Javascript</li>
+                            </ul>
+                        </div>
+                       
+                    </div>
                 </div>
-                <!-- <div class="project_card">
-                    <div id="project_name" class="titre aladin-regular" >Titre Projet</div>
 
-                    <a target="_blank" href="https://github.com/blarbee/sudoku.git"><img src="assets/sudoku.png" alt=""></a>
-                    <div id="date" class="roboto-slab-medium">Mois 202x</div>
-                    <p class="roboto-slab-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <ul class="roboto-slab-medium">
-                        <li>SKILL</li>
-                        <li>SKILL</li>
-                        <li>SKILL</li>
-                    </ul>
-                </div> -->
+                <div class="project_card">
+                    
+                    <div class="left_project_card">
+                        <h3 class="titre_h3 aladin-regular" >Placeholder</h3>
+                        <a target="_blank" href=""><img src="assets/placeholder.png" alt=""></a>
+                        <div class="date roboto-slab-medium">Month 20XX</div>
+                    </div>
+                    
+                    <div class="right_project_card">
+                        <p class="roboto-slab-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="skill_lists">
+                            <ul class="list_languages roboto-slab-medium">
+                                <li>SKILL</li>
+                                <li>SKILL</li>
+                            </ul>
+    
+                            <ul class="list_tools roboto-slab-medium">
+                                <li>TOOL</li>
+                                <li>TOOL</li>
+                            </ul>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="project_card">
+                    
+                    <div class="left_project_card">
+                        <h3 class="titre_h3 aladin-regular" >Placeholder</h3>
+                        <a target="_blank" href=""><img src="assets/placeholder.png" alt=""></a>
+                        <div class="date roboto-slab-medium">Month 20XX</div>
+                    </div>
+                    
+                    <div class="right_project_card">
+                        <p class="roboto-slab-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="skill_lists">
+                            <ul class="list_languages roboto-slab-medium">
+                                <li>SKILL</li>
+                                <li>SKILL</li>
+                            </ul>
+    
+                            <ul class="list_tools roboto-slab-medium">
+                                <li>TOOL</li>
+                                <li>TOOL</li>
+                            </ul>
+                        </div>
+                       
+                    </div>
+                </div>
+
+
+                
+
+               
             </div>
             
         </section>

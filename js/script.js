@@ -40,3 +40,7 @@
 //     glow.style.top = `${e.clientY}px`;
 //     glow.style.left = `${e.clientX}px`;
 // });
+
+// TODO: add socials to the footer maybe
+// TODO: add keyframes animation
+// TODO: add image or texte to the hero
