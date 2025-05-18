@@ -588,7 +588,7 @@ nav a:link{
 }
 #projets img:hover{
     transform:translateY(-6px) translateX(6px);
-    box-shadow: -6px 6px var(--yellow);
+    box-shadow: -6px 6px #CD785B;
     
 }
 
