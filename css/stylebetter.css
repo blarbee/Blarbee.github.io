@@ -13,6 +13,8 @@
 
     --radius: 16px;
     --fontSize: 1.05rem;
+
+    font-size: 16px;
 }
 
 /* html[lang="en"] *{
@@ -260,6 +262,7 @@ nav a:link{
 #container_socials{
     width: fit-content;
     width: 34vw;
+    position:relative;
 
     display: flex;
     flex-direction: column;
@@ -413,7 +416,7 @@ nav a:link{
     /* width: fit-content; */
     margin: auto;
     margin-top: 5vh;
-    max-width: 40vw;
+    max-width: 45vw;
 }
 
 
@@ -530,6 +533,7 @@ nav a:link{
     padding: 1.5vh;
     margin-top: 8vh;
     height:fit-content;
+    position: relative;
 
     display:flex;
     align-items: flex-end;

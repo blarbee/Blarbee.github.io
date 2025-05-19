@@ -1,0 +1,51 @@
+/* =======================================================HERO */
+
+.fondu{
+    animation-name: fondu;
+    animation-duration: 1s;
+}
+
+.from_right_to_left{
+    animation-name: fromright;
+    animation-duration: 0.8s;
+}
+
+.from_left_to_right{
+    animation-name: fromleft;
+    animation-duration: 0.8s;
+}
+
+.from_left_to_right_language_spec{
+    animation-name: languages_left_to_right_anim;
+    animation-duration: 1s;
+}
+
+.from_bottom_to_top{
+    animation-name: frombottomtotop;
+    animation-duration: 1s;
+}
+
+
+
+@keyframes fondu{ 
+	from{opacity : 0}
+	to{opacity:1}
+}
+@keyframes fromright{ 
+	from {right: -500px}
+	to{right:0px}
+}
+@keyframes fromleft {
+    from{left: -500px}
+    to{left:0}
+}
+@keyframes languages_left_to_right_anim{ 
+	from{left:-500px}
+	to{left:50%}
+}
+@keyframes frombottomtotop {
+    from{bottom: -500px}
+    to{bottom:0}
+}
+
+

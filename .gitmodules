@@ -1,0 +1,3 @@
+[submodule "projects/Sudoku"]
+	path = projects/Sudoku
+	url = git@github.com:blarbee/sudoku.git
