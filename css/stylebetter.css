@@ -15,6 +15,13 @@
     --fontSize: 1.05rem;
 }
 
+/* html[lang="en"] *{
+    background-color: red;
+}
+html[lang="fr"] *{
+    background-color: blue;
+} */
+
 /* TODO: change emoil in the hero, edit hero intro etc */
 
 .aladin-regular {
@@ -84,6 +91,24 @@ body{
     text-shadow: -1px 1px var(--white);
 }
 
+#lang_button{
+    background-color: transparent;
+
+    border: 2px var(--black) dashed;
+    position: fixed;
+    top: 90vh;
+    left: 93vw;
+    z-index: 10;
+
+    border-radius: 40%;
+    padding: 1vh;
+    width: fit-content;
+  
+}
+#lang_button:hover{
+    background-image: radial-gradient(var(--yellow) , #CD785B, var(--orange));
+}
+
 /* =================================================== NAVIGATION */
 
 nav {
@@ -124,90 +149,11 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width:60%;
+    width:45%;
 }
 nav a:link{
     text-decoration: none;
 }
-/* =================================================== HERO */
-
-#hero {
-    width:90%;
-    margin:auto;
-    height: 90vh;
-    /* background-image: url("../assets/Hero4.0.png"); */
-    background-repeat: no-repeat;
-    background-size:cover;
-
-    
-
-    position:relative;
-
-}
-
-#hero hr{
-    height:5vh;
-    background-color: var(--black);
-    color: var(--black);
-
-    overflow: visible;
-    width:110%;
-
-    position:absolute;
-    bottom:0;
-    left:-5%;
-    
-}
-
-
-#hero_h1 {
-    width:fit-content;
-    color: var(--black);
-    z-index: -10;
-    font-size: 8rem;
-
-    margin-left:10vw;
-
-    padding: 0;
-    line-height: 1;
-
-
-}
-
-#hero_h1:nth-child(1) {
-    margin-top: 5vh;
-}
-
-#hero_h1:nth-child(2) {
-    margin-left: 20vw;
-}
-
-#hero_h1:nth-child(3) {
-    margin-left: 35vw;
-}
-
-#hero_h1:nth-child(4) {
-    margin-left: 50vw;
-}
-
-#hero_intro{
-    width: 40vw;
-    height: 40vh;
-
-    border-radius: var(--radius);
-    background-color: var(--orange);
-    box-shadow: var(--black) -5px 5px ;
-
-    position: absolute;
-    z-index: 1;
-    left:5vw;
-    top:26vh;
-
-    opacity: 0.5;
-
-
-}
-
 
 /* =================================================== ABOUT ME */
 #about_me{
@@ -264,6 +210,35 @@ nav a:link{
 
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    block-size: fit-content;
+    border-bottom: 2px dotted var(--white);
+}
+  
+.tooltip .tooltip_txt {
+    visibility: hidden;
+    width: fit-content;
+    text-wrap: none;
+    min-width: fit-content;
+    background-color: var(--purple);
+    color: var(--white);
+    text-align: center;
+    border-radius: 6px;
+    padding: 1vh;
+
+    position: absolute;
+    top:0;
+    z-index: 4;
+}
+  
+.tooltip:hover .tooltip_txt {
+    visibility: visible;
+}
+
+
+
 #about_me_langue {
     background-color: var(--orange);
     color: var(--white);
@@ -274,15 +249,13 @@ nav a:link{
     padding: 1vh;
 
     position: relative;
-    left:40%;
+    left:50%;
     bottom:2vh;
 }
 #about_me_langue p, strong{
     font-size: 0.8rem;
     
 }
-
-
 
 #container_socials{
     width: fit-content;
@@ -293,10 +266,11 @@ nav a:link{
     align-items: flex-end;
     justify-content: flex-end;
 }
-#container_socials li{
+#container_socials a, #container_socials li{
     display: flex;
     flex-direction: row;
     align-items: center;
+    /* justify-content:baseline; */
     width: 100%;
     padding:0.5vh;
 }
@@ -310,9 +284,10 @@ nav a:link{
     border-radius: var(--radius);
     background-color: var(--yellow);
     box-shadow: var(--black) 8px -8px ;
+    
 
     width: fit-content;
-    padding:1vh;
+    padding:1.5vh;
     margin-top: 2vh;
 
     display: flex;
@@ -329,8 +304,10 @@ nav a:link{
     width:2vw;
     margin-right: 0.5vh;
 }
-#hero_socials img:hover{
-    background-color: var(--white);
+#hero_socials a:hover:nth-child(2), #hero_socials a:hover:nth-child(3) {
+    /* background-color: #CD785B; */
+    background-image: linear-gradient(to right, var(--white),var(--yellow),  #cd785b);
+
     border-radius: 12px;
 }
 
@@ -550,19 +527,22 @@ nav a:link{
     box-shadow: -10px 10px var(--black);
     border-radius: var(--radius);
     /* margin: 2vh; */
-    padding: 1vh;
+    padding: 1.5vh;
     margin-top: 8vh;
-
+    height:fit-content;
 
     display:flex;
     align-items: flex-end;
     flex-direction: row;
 }
 
+
 .left_project_card{
+    height: 120%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     margin: 2vh;
     padding:1vh;
 
@@ -574,10 +554,9 @@ nav a:link{
     align-items: flex-end;
     margin: 2vh;
 
-    /* background-color: red; */
-    height: 30vh;
-    /* height:100%; */
-
+}
+.right_project_card p{
+    font-size: 1rem;
 }
 
 #projets img{
@@ -599,6 +578,8 @@ nav a:link{
     align-items: center;
     margin-top: 4vh;
 
+    /* background-color: green; */
+
 
 }
 .list_languages li{
@@ -609,7 +590,6 @@ nav a:link{
     padding:0.7vh;
     width: fit-content;
     box-shadow: -4px 4px var(--black);
-
 
 }
 .list_tools li{
@@ -627,7 +607,9 @@ nav a:link{
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
-    width: 40%;
+    width: 50%;
+
+    /* background-color: yellow; */
 
 }
 
@@ -637,7 +619,7 @@ nav a:link{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-
+    padding: 1vh;
     
 }
 .progress_section label{
@@ -645,7 +627,7 @@ nav a:link{
 }
 progress {
     /* style rules */
-    width: 80%;
+    width: 95%;
     height: 0.8vh;
     border-radius: 10px;
     background-color: var(--yellow);

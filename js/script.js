@@ -1,3 +1,18 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const root = document.documentElement;
 
 // function theme(){
@@ -43,4 +58,3 @@
 
 // TODO: add socials to the footer maybe
 // TODO: add keyframes animation
-// TODO: add image or texte to the hero
