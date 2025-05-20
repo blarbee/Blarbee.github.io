@@ -191,8 +191,7 @@ nav a:link{
 
 }
 #container_about_me {
-    /* border: solid 9px red; */
-    /* background-color: red; */
+
     width: fit-content;
     height: fit-content;
 
@@ -290,7 +289,6 @@ nav a:link{
     border-radius: var(--radius);
     background-color: var(--yellow);
     box-shadow: var(--black) 8px -8px ;
-    
 
     width: fit-content;
     padding:1.5vh;
@@ -315,7 +313,6 @@ nav a:link{
 #hero_socials a:hover:nth-child(2), #hero_socials a:hover:nth-child(3) {
     /* background-color: #CD785B; */
     background-image: linear-gradient(to right, var(--white),var(--yellow),  #cd785b);
-
     border-radius: 12px;
 }
 
@@ -651,9 +648,11 @@ progress {
   }
   progress::-webkit-progress-bar {
     background-color: var(--yellow);
+    border-radius: 10px;
   }
   progress::-webkit-progress-value {
     background-color: var(--purple);
+    border-radius: 10px;
   }
   progress::-moz-progress-bar {
     /* background-color: var(--purple); */

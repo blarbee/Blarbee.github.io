@@ -15,7 +15,7 @@
     --radius: 16px;
     --fontSize: 1.05rem;
 
-    font-size: 14px;
+    font-size: 16px;
 }
 
 *{
@@ -36,46 +36,99 @@
 body{
     width: calc((100vw/4)*3.8);
 }
-
+nav {
+    display: none;
+}
+/* =================================== HERO */
 #about_me{
     display: flex;
     flex-direction: column;
     height: fit-content;
 }
+#about_me_h2 {
+    font-size: 5rem;
+    margin: auto;
 
+}
 #container_about_me {
     width: 100%;
 }
 #about_me_paragraph {
     width: 100%;
 }
-
-
 #container_socials{
     width: 100%;
-    position:relative;
+}
+
+/* =================================== SKILLS */
+
+#lists{
+    width: 100%;
 
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
+    align-items: center;
+    margin-top: 5vh;
+
+}
+.bland_container{
+    margin-bottom: 4vh;
+    max-width: fit-content;
 }
 
+/* =================================== EXPERIENCE */
+#container_experience{
+    width: 100%;
+    max-width: 100%;
+    margin-top: 4vh;
+}
+#experience_competence{
+    position: relative;
+    bottom:1vh;
+    left:60%;
 
+    box-shadow: -4px -4px var(--orange);
+}
+/* =================================== FORMATION */
+#formation_card{
+    width: 100%;
+}
+.formation_info{
+    flex-direction: column;
+}
+.formation_info_date{
+    width:fit-content;
+    margin-bottom: 1vh;
+}
+/* =================================== PROJECTS */
+.project_card{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.left_project_card{
+    width: 100%;
+    margin: 0vh;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.right_project_card{
+    width: 100%;
+    margin: 0vh;
+}
+#projets img{
+    width:100%;
+    margin: 0vh;
+}
+.skill_lists{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#projets ul{
+    width: 100%;
+}
 
 
 
