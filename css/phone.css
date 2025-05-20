@@ -1,11 +1,5 @@
 @media only screen and (max-width: 1200px) {
 :root{
-    /* --white: #FDF5F2;
-    --black: #2F100B;
-    --purple: #7967BD;
-    --orange: #CD785B;
-    --yellow: #E5B55B; */
-
     --white: #F7E4CA;
     --black: #352208;
     --purple: #574b88;
@@ -18,10 +12,7 @@
     font-size: 16px;
 }
 
-
-
 body{
-    /* width: calc((100vw/4)*3.8); */
     width: 100%;
 }
 #lang_button{
@@ -54,7 +45,6 @@ nav {
 #container_socials{
     width: 100%;
 }
-
 /* =================================== SKILLS */
 
 #lists{
@@ -63,11 +53,14 @@ nav {
     flex-direction: column;
     align-items: center;
     margin-top: 5vh;
+    background-color: green;
 }
 .bland_container{
     margin-bottom: 4vh;
-    width: fit-content;
-    max-width: 50vw;
+    position: relative;
+    width: 60vw;
+    max-width: 100%;
+    background-color: blue;
 }
 .bland_container:nth-child(1){
     align-self: flex-start;
@@ -118,7 +111,7 @@ nav {
 }
 #projets img{
     width:100%;
-    margin: 0vh;
+    margin: 1vh;
 }
 .skill_lists{
     width: 100%;
@@ -131,50 +124,10 @@ nav {
     width: 100%;
 }
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+@media only screen and (max-width: 600px){
+.bland_container{
+    width: 100%;
+}
 }
