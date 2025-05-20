@@ -170,21 +170,12 @@ nav a:link{
 #about_me{
     margin:auto;
     height: 80vh;
-    /* height: fit-content; */
     position:relative;
-
-    /* background-color: #CD785B; */
     background-image:url("../assets/Hero7.0.svg") ;
-     /* background-image: (to bottom, var(--white)), url("../assets/Hero6.0.svg"); */
-
-     /* background-image: linear-gradient( rgba(245, 0, 0, 0) 95%, var(--white)), url('../assets/Hero6.0.svg'); */
-
     background-repeat: no-repeat;
     background-size:cover;
     padding:5vw;
-    /* margin-bottom: 10vh; */
     margin-top: 5vh;
-
     display:flex;
     flex-direction: row;
     justify-content: space-between;
