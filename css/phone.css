@@ -43,6 +43,7 @@ nav {
     width: 100%;
 }
 #container_socials{
+    margin-top: 3vh;
     width: 100%;
 }
 /* =================================== SKILLS */
@@ -53,14 +54,12 @@ nav {
     flex-direction: column;
     align-items: center;
     margin-top: 5vh;
-    background-color: green;
 }
 .bland_container{
     margin-bottom: 4vh;
     position: relative;
     width: 60vw;
     max-width: 100%;
-    background-color: blue;
 }
 .bland_container:nth-child(1){
     align-self: flex-start;
@@ -86,13 +85,14 @@ nav {
 /* =================================== FORMATION */
 #formation_card{
     /* width: 100%; */
+    padding: 2vh;
 }
 .formation_info{
     flex-direction: column;
 }
 .formation_info_date{
     width:fit-content;
-    margin-bottom: 1vh;
+    margin-bottom: 1.5vh;
 }
 /* =================================== PROJECTS */
 .project_card{
@@ -127,7 +127,17 @@ nav {
 }
 
 @media only screen and (max-width: 600px){
+    #lang_button{
+    background-color: var(--white);
+    border: dashed 2px var(--orange);
+    top: 90vh;
+    left: 85vw;
+    z-index: 10;
+}
 .bland_container{
     width: 100%;
+}
+#experience_h3_stage{
+    font-size: 1.5rem;
 }
 }

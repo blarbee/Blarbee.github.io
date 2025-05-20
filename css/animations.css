@@ -53,3 +53,8 @@
     100%{top:90vh}
 }
 
+@media only screen and (max-width: 600px){
+@keyframes floating{
+    0%{}
+}
+}
