@@ -668,7 +668,7 @@ footer {
     margin: auto;
     font-size: var(--fontSize);
     padding: 0.8%;
-    margin-bottom: 0.5%;
+    margin-bottom: 0.5vh;
 
     display: flex;
     justify-content: space-between;

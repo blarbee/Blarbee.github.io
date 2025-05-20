@@ -1,4 +1,4 @@
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
 :root{
     /* --white: #FDF5F2;
     --black: #2F100B;
@@ -21,7 +21,15 @@
 
 
 body{
-    width: calc((100vw/4)*3.8);
+    /* width: calc((100vw/4)*3.8); */
+    width: 100%;
+}
+#lang_button{
+    background-color: var(--white);
+    border: dashed 2px var(--orange);
+    top: 93vh;
+    left: 85vw;
+    z-index: 10;
 }
 nav {
     display: none;
@@ -51,17 +59,23 @@ nav {
 
 #lists{
     width: 100%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 5vh;
-
 }
 .bland_container{
     margin-bottom: 4vh;
-    max-width: fit-content;
+    width: fit-content;
+    max-width: 50vw;
 }
+.bland_container:nth-child(1){
+    align-self: flex-start;
+}
+.bland_container:nth-child(2){
+    align-self: flex-end;
+}
+
 
 /* =================================== EXPERIENCE */
 #container_experience{
@@ -78,7 +92,7 @@ nav {
 }
 /* =================================== FORMATION */
 #formation_card{
-    width: 100%;
+    /* width: 100%; */
 }
 .formation_info{
     flex-direction: column;
