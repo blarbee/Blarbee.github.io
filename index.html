@@ -2,7 +2,7 @@
 
 <html lang="fr">
     <head>
-        <title>Blarb</title>
+        <title>Blarbfolio</title>
         <meta charset="utf-8">
         <link href="css/stylebetter.css" rel="stylesheet" >
         <link href="css/phone.css" rel="stylesheet">
@@ -14,12 +14,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Libre+Barcode+128&family=Libre+Barcode+128+Text&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
           
+        <script src="https://kit.fontawesome.com/cd0db9ac20.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <a href="index.en.html"><button id="lang_button">EN.</button></a>
         <nav class="roboto-slab-regular">
             <li id="nav_gauche" >
-                <ul><img id="nav_logo" src="./assets/four_star.png" alt="logo"></ul>
+                <ul><i class="fa-solid fa-star"></i></ul>
                 <ul><a href="#hero"class="roboto-slab-medium">Ouachen Nawal</a></ul>
             </li>
 
@@ -53,9 +54,9 @@
             <div id="container_socials" class="">
                 <h2 id="hero_h2" class="titre_h3 aladin-regular">Contactez-moi!</h2>
                 <ul id="hero_socials">
-                    <a><li><img src="./assets/mail.svg" alt="gmail address">nwl.ouachen@gmail.com</li></a>
-                    <a href="https://github.com/blarbee" target="_blank"><li><img src="./assets/icons8-github.svg" alt="github_link">github.com/blarbee</li></a>
-                    <a href="https://www.linkedin.com/in/nawal-ouachen-055441227/" target="_blank"><li><img src="./assets/icons8-linkedin.svg" alt="linkedin_link">linkedin.com/in/nawal-ouachen</li></a>
+                    <a><li><i class="fa-regular fa-envelope"></i>nwl.ouachen@gmail.com</li></a>
+                    <a href="https://github.com/blarbee" target="_blank"><li><i class="fa-brands fa-github"></i>github.com/blarbee</li></a>
+                    <a href="https://www.linkedin.com/in/nawal-ouachen-055441227/" target="_blank"><li><i class="fa-brands fa-linkedin"></i>linkedin.com/in/nawal-ouachen</li></a>
                 </ul>
             </div>
 
@@ -71,15 +72,15 @@
                     <h3 class="titre_h3 aladin-regular" >Languages de programmation</h3>
                     <div  class="card roboto-slab-medium">
                         <ul>
+                            <li><i class="fa-brands fa-java"></i>Java</li>
+                            <li><i class="fa-brands fa-python"></i>Python</li>
+                            <li><i class="fa-brands fa-html5"></i>HTML/CSS</li>
+                            <li><i class="fa-brands fa-js"></i>Javascript</li>
                             <li>C</li>
                             <li>C++</li>
-                            <li>Makefile</li>
-                            <li>Java</li>
-                            <li>Python</li>
-                            <li>HTML/CSS</li>
-                            <li>JS</li>
-                            <li>SQL</li>
-                            <li>PHP</li>
+                            <li><i class="fa-solid fa-terminal"></i>Makefile</li>
+                            <li><i class="fa-solid fa-database"></i>SQL</li>
+                            <li><i class="fa-brands fa-php"></i>PHP</li>
                         </ul>
                     </div>
     
@@ -91,12 +92,11 @@
                     <div id="card_tools" class="card roboto-slab-medium">
                         <ul>
                             <li>VS Code</li>
-                            <li>Android Studio</li>
-                            <li>Git/Github</li>
-                            <li>Figma</li>
-                            <li>Linux</li>
-
-                        
+                            <li>IntelliJ IDEA</li>
+                            <li><i class="fa-brands fa-android"></i>Android Studio</li>
+                            <li><i class="fa-brands fa-square-git"></i>Git/Github</li>
+                            <li><i class="fa-brands fa-figma"></i>Figma</li>
+                            <li><i class="fa-brands fa-ubuntu"></i>Ubunu</li>
                         </ul>
                     </div>
     
@@ -166,12 +166,12 @@
                         <p class="roboto-slab-medium">App mobile Android écrite en Java conçue pour suivre les tâches et événements à venir nécessitant un travail préparatoire.<br><br>Il suffit d'ajouter une tâche ou un événement à l'activité principale en remplissant un formulaire dans TaskActivity. Le compte à rebours s'affichera alors dans la Recycler view de l'activité principale, ainsi que dans un widget optionnel. <a target="_blank" href="https://github.com/blarbee/deadline_countdown">Github</a></p>
                         <div class="skill_lists">
                             <ul class="list_languages roboto-slab-medium">
-                                <li>Java</li>
+                                <li><i class="fa-brands fa-java"></i>Java</li>
                             </ul>
     
                             <ul class="list_tools roboto-slab-medium">
-                                <li>Figma</li>
-                                <li>Android Studio</li>
+                                <li><i class="fa-brands fa-figma"></i>Figma</li>
+                                <li><i class="fa-brands fa-android"></i>Android Studio</li>
                             </ul>
                         </div>
                         <div class="progress_section">
@@ -190,11 +190,11 @@
                     </div>
                     
                     <div class="right_project_card">
-                        <p class="roboto-slab-medium">Le Sudoku est mon puzzle préféré, je me devais donc d'en recréer un de mes propres mains.<br><br>Pour cela j'ai utilisé l'API <a target="_blank" href="https://sudoku-api.vercel.app/">Dosuku</a> pour recupérer des grilles de différentes difficultés ainsi que leur grille solution associé.</p>
+                        <p class="roboto-slab-medium">Puzzle Sudoku classique écrit en javascript pour expérimenter le DOM HTML.<br><br>Pour cela j'ai utilisé l'API <a target="_blank" href="https://sudoku-api.vercel.app/">Dosuku</a> pour recupérer des grilles de différentes difficultés ainsi que leur grille solution associé. L'utilisateur·ice peut saisir des valeurs et les supprimer s'iel le souhaite; la fonction de prise de notes pourrait être bientôt disponible. <a target="_blank" href="https://github.com/blarbee/deadline_countdown">Github</a></p>
                         <div class="skill_lists">
                             <ul class="list_languages roboto-slab-medium">
-                                <li>HTML/CSS</li>
-                                <li>Vanilla Javascript</li>
+                                <li><i class="fa-brands fa-html5"></i>HTML/CSS</li>
+                                <li><i class="fa-brands fa-js"></i>Vanilla Javascript</li>
                             </ul>
                         </div>
                         <div class="progress_section">

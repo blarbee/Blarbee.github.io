@@ -1,0 +1,115 @@
+@media only screen and (max-width: 900px) {
+:root{
+    /* --white: #FDF5F2;
+    --black: #2F100B;
+    --purple: #7967BD;
+    --orange: #CD785B;
+    --yellow: #E5B55B; */
+
+    --white: #F7E4CA;
+    --black: #352208;
+    --purple: #574b88;
+    --orange: #6c4c3d;
+    --yellow:#efc58a ;
+
+    --radius: 16px;
+    --fontSize: 1.05rem;
+
+    font-size: 12px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    outline:0;
+    border:0;
+    border-spacing: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-size: var(--fontSize);
+    line-height: 25px;
+    border: 0.5px dashed var(--orange);
+}
+
+
+body{
+    width: calc((100vw/4)*3.8);
+}
+
+#about_me{
+    display: flex;
+    flex-direction: column;
+}
+
+#container_about_me {
+    width: 100%;
+}
+#about_me_paragraph {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}

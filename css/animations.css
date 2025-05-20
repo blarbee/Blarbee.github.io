@@ -47,5 +47,9 @@
     from{bottom: -500px}
     to{bottom:0}
 }
-
+@keyframes floating{
+    0%{top: 90vh}
+    50%{top:90.5vh}
+    100%{top:90vh}
+}
 

@@ -105,10 +105,19 @@ body{
     border-radius: 40%;
     padding: 1vh;
     width: fit-content;
+
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
   
 }
 #lang_button:hover{
     background-image: radial-gradient(var(--yellow) , #CD785B, var(--orange));
+}
+
+i{
+    margin-right: 1vh;
+    padding: 0.3vh;
 }
 
 /* =================================================== NAVIGATION */
@@ -188,6 +197,7 @@ nav a:link{
 
     background-color: var(--white);
     box-shadow: 0px 0px 20px 50px var(--white);
+
 }
 #container_about_me {
     /* border: solid 9px red; */
@@ -209,6 +219,7 @@ nav a:link{
     width: 35vw;
     margin-top: 5vh;
     padding: 2vh;
+    
 
 }
 
@@ -253,6 +264,7 @@ nav a:link{
     position: relative;
     left:50%;
     bottom:2vh;
+
 }
 #about_me_langue p, strong{
     font-size: 0.8rem;
@@ -303,9 +315,11 @@ nav a:link{
 
 }
 
-#hero_socials img{
-    width:2vw;
-    margin-right: 0.5vh;
+#hero_socials i{
+    width:fit-content;
+    margin-right: 0.7vh;
+    font-size: 2.3rem;
+    text-decoration: none;
 }
 #hero_socials a:hover:nth-child(2), #hero_socials a:hover:nth-child(3) {
     /* background-color: #CD785B; */
@@ -345,7 +359,8 @@ nav a:link{
     display: flex;
     align-items: start;
     justify-content: space-evenly;
-    margin-top: 5vh;
+    margin-top: 8vh;
+
 }
 .bland_container .titre_h3{
     font-size: 2rem;
@@ -398,6 +413,11 @@ nav a:link{
     box-shadow: -4px 4px var(--black);
 }
 
+#competence i{
+    margin-right: 1vh;
+    padding: 0.3vh;
+}
+
 
 /* =================================================== EXPERIENCE */
 #experience {
@@ -415,7 +435,7 @@ nav a:link{
 #container_experience{
     /* width: fit-content; */
     margin: auto;
-    margin-top: 5vh;
+    margin-top: 8vh;
     max-width: 45vw;
 }
 
@@ -510,7 +530,7 @@ nav a:link{
     margin-bottom: 20vh;;
 }
 #container_projets{
-    margin-top: 5vh;
+    margin-top: 1vh;
 
     display:flex;
     flex-direction: column;
@@ -532,7 +552,7 @@ nav a:link{
     /* margin: 2vh; */
     padding: 1.5vh;
     margin-top: 8vh;
-    height:fit-content;
+    /* height:fit-content; */
     position: relative;
 
     display:flex;
@@ -542,7 +562,7 @@ nav a:link{
 
 
 .left_project_card{
-    height: 120%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -589,7 +609,7 @@ nav a:link{
 .list_languages li{
     background-color: var(--purple);
     color:var(--white);
-    font-size: 1rem;
+    font-size: 0.9rem;
     border-radius: 8px;
     padding:0.7vh;
     width: fit-content;
@@ -599,7 +619,7 @@ nav a:link{
 .list_tools li{
     background-color: var(--orange);
     color:var(--white);
-    font-size: 1rem;
+    font-size: 0.9rem;
     border-radius: 8px;
     padding:0.7vh;
     width: fit-content;
