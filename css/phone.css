@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1050px) {
 :root{
     --white: #F7E4CA;
     --black: #352208;
@@ -65,7 +65,6 @@ nav {
 .bland_container:nth-child(2){
     align-self: flex-end;
 }
-
 
 /* =================================== EXPERIENCE */
 #container_experience{

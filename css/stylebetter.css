@@ -131,8 +131,6 @@ nav {
     position:sticky;
     z-index: 10;
     top: 0.5vh;
-
-    font-size: var(--fontSize);
  
     display: flex;
     justify-content: space-between;
@@ -159,6 +157,18 @@ nav {
 }
 nav a:link{
     text-decoration: none;
+}
+nav a{
+    padding: 0 0.5vh 0 0.5vh;
+    font-size: 1.3rem;
+}
+nav a:hover{
+    border-radius: 10px;
+    /* background-color: #CD785B; */
+    background-image: linear-gradient(to right,var(--yellow),  #cd785b);
+    box-shadow: linear-gradient(to right, var(--white),var(--yellow),  #cd785b) 0 0 20px ;
+    /* padding: 0 1vh 0 1vh; */
+
 }
 
 /* =================================================== ABOUT ME */
