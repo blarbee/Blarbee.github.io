@@ -17,14 +17,9 @@
     font-size: 16px;
 }
 
-/* html[lang="en"] *{
-    background-color: red;
+html{
+    scroll-behavior: smooth;
 }
-html[lang="fr"] *{
-    background-color: blue;
-} */
-
-/* TODO: change emoil in the hero, edit hero intro etc */
 
 .aladin-regular {
     font-family: "Aladin", system-ui;
@@ -515,7 +510,7 @@ nav a:link{
 #projets{
     height: fit-content;
     padding: 5vw;
-    margin-bottom: 10vh;;
+    margin-bottom: 10vh;
 }
 #container_projets{
     margin-top: 5vh;
@@ -539,7 +534,7 @@ nav a:link{
     /* margin: 2vh; */
     padding: 1.5vh;
     margin-bottom: 6vh;
-    /* height:fit-content; */
+    height:fit-content;
     position: relative;
 
     display:flex;
@@ -555,7 +550,7 @@ nav a:link{
     align-items: center;
     justify-content: space-between;
     margin: 2vh;
-    padding:1vh;
+    padding:2vh;
 
 }
 .right_project_card{
@@ -563,7 +558,7 @@ nav a:link{
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    margin: 2vh;
+    margin: 1vh;
 
 }
 .right_project_card p{
@@ -571,7 +566,7 @@ nav a:link{
 }
 
 #projets img{
-    width:15vw;
+    width:20vw;
     border: 2px solid --black;
     border-radius: 10px;
     margin: 2vh;
@@ -635,6 +630,7 @@ nav a:link{
 }
 .progress_section label{
     font-size: 0.8rem;
+    margin:1vh;
 }
 progress {
     /* style rules */

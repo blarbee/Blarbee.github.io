@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1350px) {
 :root{
     --white: #F7E4CA;
     --black: #352208;
@@ -18,9 +18,7 @@ body{
 #lang_button{
     background-color: var(--white);
     border: dashed 2px var(--orange);
-    top: 93vh;
-    left: 85vw;
-    z-index: 10;
+    top: 80vh;
 }
 nav {
     display: none;
@@ -95,6 +93,9 @@ nav {
     margin-bottom: 1.5vh;
 }
 /* =================================== PROJECTS */
+#projets{
+    margin-top: 5vh;
+}
 .project_card{
     display:flex;
     flex-direction: column;
@@ -123,7 +124,6 @@ nav {
 #projets ul{
     width: 100%;
 }
-
 }
 
 @media only screen and (max-width: 600px){
@@ -134,6 +134,7 @@ nav {
     left: 85vw;
     z-index: 10;
 }
+
 .bland_container{
     width: 100%;
 }
