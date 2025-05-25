@@ -16,6 +16,22 @@
 
     font-size: 16px;
 }
+:root.dark{
+    --white:    #af8c7a; 
+    --black:  #352208;
+    --purple:     #42412c;    
+    --orange:    #413769;
+    --yellow:  #95705d;  
+
+    /* --white:   #F2D7A0;
+    --black:   #120A03;
+    --purple:  #3A1C5D;
+    --orange:  #A65A3C;
+    --yellow:  #E59C70; */
+
+
+
+}
 
 html{
     scroll-behavior: smooth;
@@ -114,6 +130,7 @@ i{
     margin-right: 1vh;
     padding: 0.3vh;
 }
+
 
 /* =================================================== NAVIGATION */
 

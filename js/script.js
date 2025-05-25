@@ -31,6 +31,38 @@ const observer_fondu = new IntersectionObserver(elements => {
 
 document.querySelectorAll('#container_projets>*').forEach(el => {observer_left_to_right.observe(el);});
 
+// ============================================================ THEMES =======================================
+
+window.addEventListener('DOMContentLoaded', () => {
+  const savedTheme = localStorage.getItem("theme") || "light";
+  document.documentElement.className = savedTheme;
+
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark");
+  } else {
+    document.body.classList.remove("dark");
+  }
+});
+
+function toggleTheme() {
+  const themeIcon = document.getElementById("dark");
+  document.body.classList.toggle("dark");
+
+  if (document.body.classList.contains("dark")) {
+    localStorage.setItem("theme", "dark");
+    document.documentElement.className = "dark";
+  } else {
+    localStorage.setItem("theme", "light");
+    document.documentElement.className = "light";
+  }
+}
+
+
+
+
+
+
+
 
 // const root = document.documentElement;
 
@@ -43,19 +75,7 @@ document.querySelectorAll('#container_projets>*').forEach(el => {observer_left_t
 //     console.log("Text color: " + randColor);
 // }
 
-// function toggleTheme() {
-//     document.body.classList.toggle("dark");
-//     const themeIcon = document.getElementById("themeIcon");
 
-//     if (document.body.classList.contains("dark")) {
-//         localStorage.setItem("theme", "dark");
-//         themeIcon.src = "/assets/icons8-été-70.png";
-//     } else {
-//         localStorage.setItem("theme", "light");
-
-//         themeIcon.src = "/assets/icons8_moon_light.png";
-//     }
-// }
 
 // document.addEventListener("DOMContentLoaded", () => {
 //     if (localStorage.getItem("theme") === "dark") {
