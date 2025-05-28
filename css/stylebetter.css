@@ -17,11 +17,13 @@
     font-size: 16px;
 }
 :root.dark{
-    --white:    #af8c7a; 
+    --white:    #95705d;  
     --black:  #352208;
-    --purple:     #42412c;    
-    --orange:    #413769;
-    --yellow:  #95705d;  
+    --purple:      #413769;
+    --orange:    #42412c;   
+    --yellow:  #af8c7a; 
+
+
 
     /* --white:   #F2D7A0;
     --black:   #120A03;
@@ -224,7 +226,7 @@ nav a:hover{
     /* background-color: #CD785B; */
     /* background-image: linear-gradient( #CD785B,var(--white), #CD785B); */
     background-color: var(--black);
-    color:var(--white);
+    color: #F7E4CA;
     font-size: var(--fontSize);
     border: 5px solid var(--orange) ;
     border-radius: var(--radius);
@@ -266,7 +268,7 @@ nav a:hover{
 
 #about_me_langue {
     background-color: var(--orange);
-    color: var(--white);
+    color: #F7E4CA;
 
     border: 6px dotted var(--white);
     border-radius: 12px;
@@ -310,7 +312,7 @@ nav a:hover{
 #hero_socials {
     border-radius: var(--radius);
     background-color: var(--yellow);
-    box-shadow: var(--black) 8px -8px ;
+    box-shadow: #352208 8px -8px ;
 
     width: fit-content;
     padding:1.5vh;
@@ -377,7 +379,7 @@ nav a:hover{
     width:fit-content;
     position: relative;
     z-index: 3;
-    text-shadow: -1px 1px var(--black);
+
     color: var(--purple);
     text-shadow: -1px 1px var(--white);
 }
@@ -387,7 +389,7 @@ nav a:hover{
     background-color: var(--yellow);
     display:flex;
     flex-direction: row;
-    box-shadow: -10px 10px var(--black);
+    box-shadow: -10px 10px #352208;
 }
 .card li{
     font-size: var(--fontSize);
@@ -415,12 +417,12 @@ nav a:hover{
     margin:1%;
 }
 #competence li{
-    color:var(--white);
+    color: #F7E4CA;
     border-radius: 8px;
     width: fit-content;
     padding:1vh;
     margin:2%;
-    box-shadow: -4px 4px var(--black);
+    box-shadow: -4px 4px #352208;
 }
 
 #competence i{
@@ -556,7 +558,7 @@ nav a:hover{
     border: 8px solid var(--orange);
     /* background-image: linear-gradient(var(--yellow), var(--white), var(--yellow)); */
     background-color: var(--white);
-    box-shadow: -10px 10px var(--black);
+    box-shadow: -10px 10px #352208;
     border-radius: var(--radius);
     /* margin: 2vh; */
     padding: 1.5vh;
@@ -617,22 +619,22 @@ nav a:hover{
 }
 .list_languages li{
     background-color: var(--purple);
-    color:var(--white);
+    color:#F7E4CA;
     font-size: 0.9rem;
     border-radius: 8px;
     padding:0.7vh;
     width: fit-content;
-    box-shadow: -4px 4px var(--black);
+    box-shadow: -4px 4px #352208;
 
 }
 .list_tools li{
     background-color: var(--orange);
-    color:var(--white);
+    color:#F7E4CA;
     font-size: 0.9rem;
     border-radius: 8px;
     padding:0.7vh;
     width: fit-content;
-    box-shadow: -4px 4px var(--black);
+    box-shadow: -4px 4px #352208;
 
 }
 
