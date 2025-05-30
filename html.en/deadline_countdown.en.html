@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Blarbfolio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="../css/stylebetter.css" rel="stylesheet" >
+        <link href="../css/phone.css" rel="stylesheet">
+        <link href="../css/animations.css" rel="stylesheet">
+
+        <link href="../css/deadline_countdown.css" rel="stylesheet" >
+        
+        <link href="./assets/four_star.png" rel="icon" >
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Libre+Barcode+128&family=Libre+Barcode+128+Text&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/cd0db9ac20.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <a href="../html/deadline_countdown.html"><button id="lang_button">FR.</button></a>
+        <nav class="aladin-regular">
+            <li id="nav_gauche" >
+                <ul><i class="fa-solid fa-sun"></i></ul>
+                <ul><a href="#about_me" style="font-weight: 600;" >Ouachen Nawal</a></ul>
+            </li>
+
+            <li id="nav_droite" >
+                <ul><a href="../index.en.html#competence">Technical skills</a></ul>
+                <ul><a href="../index.en.html#experience">Experience</a></ul>
+                <ul><a href="../index.en.html#experience">Education</a></ul>
+                <ul><a href="../index.en.html#projets">Projects</a></ul>
+                <ul><a id="dark" onclick="toggleTheme()">Theme</a></ul>
+                <!-- <ul><a href="index.en.html">Contactez-moi</a></ul> -->
+            </li>
+        </nav>
+
+
+        <section id="why">
+            <div id="screenshots" >
+                <img src="../assets/Samsung Galaxy A50-1.png">
+                <img src="../assets/Samsung Galaxy A50.png">
+            </div>
+
+            <div id="why_paragraph">
+                <h2 class="aladin-regular" >Lorem ipsum?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
+        </section>
+
+
+        <section id="how">
+
+
+            <div id="how_paragraph">
+                <h2 class="aladin-regular" >Lorem ipsum?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
+            <img id="mockup" src="../assets/deadline_countdown.svg">
+
+        </section>       
+
+        <section id="code">
+            <pre>
+public class ViewHolder extends RecyclerView.ViewHolder {
+    public final TextView mTitleView;
+    public final TextView mCountdownView;
+    public final ImageButton mDeleteView;
+    public Task mTask;
+
+    public CountDownTimer countdownTimer = null;
+
+    public final View mRootView;
+
+    public ViewHolder(FragmentItemBinding binding) {
+        super(binding.getRoot());
+        mTitleView = binding.itemTitle;
+        mCountdownView = binding.itemCountdown;
+        mDeleteView  = binding.itemDelButton;
+
+        mRootView = binding.getRoot();
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + " '" + mCountdownView.getText() + "'";
+    }
+}
+                
+            </pre>
+            <div id="why_paragraph">
+                <h2 class="aladin-regular" >Lorem ipsum?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </section>
+
+
+
+        <footer>
+            <ul id="footer_list" >
+                <li><img style="width:50%; height:50%; margin:auto;" src="https://archives.bulbagarden.net/media/upload/2/2e/Spr_b_5b_003_f_s.png" alt="Shiny Female" height="96" width="96"></a></li>
+                <li class="roboto-slab-medium" >© 2025 Blarbee</li>
+                <li class="libre-barcode-128-text-regular" >Bulbasaur</li>
+            </ul>
+        </footer>
+    </body>
+    <script src="../js/script.js"></script> 
+
+</html>
